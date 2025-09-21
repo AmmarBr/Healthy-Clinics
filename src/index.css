@@ -1,0 +1,37 @@
+/* 1) الخط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+/* 2) Tailwind */
+@import "tailwindcss";
+
+/* 3) Variants (سطر واحد بدون أقواس) */
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant rtl (&:where([dir="rtl"] *));
+
+/* 4) الثيم (CSS-first) */
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+               Roboto, "Noto Sans Arabic", "Noto Sans", Arial, sans-serif;
+
+  --color-primary: #cda52c;
+
+  --color-neutral-50: #f7f7f7;
+  --color-neutral-900: #161616;
+}
+
+/* 5) قواعد عامة خفيفة */
+html, body, #root { height: 100%; }
+body { font-family: var(--font-sans); background: var(--color-neutral-50); color: var(--color-neutral-900); }
+
+
+/* تخصيص أزرار وبوليت الـ Swiper */
+.swiper-button-next,
+.swiper-button-prev { color: var(--color-primary); }
+
+/* تأكد إن عناصر السلايدر تحت الـ overlay */
+.swiper, .swiper * { z-index: 0; }
+.swiper-pagination-bullet { opacity: .5; }
+.swiper-pagination-bullet-active {
+  background: var(--color-primary);
+  opacity: 1;
+}

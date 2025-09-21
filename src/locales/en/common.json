@@ -1,0 +1,130 @@
+{
+  "nav": { "home": "Home", "services": "Services", "doctors": "Doctors", "contact": "Contact us", "about": "About us", "english": "English", "arabic": "العربية", "appearance": "Appearance" },
+
+  "hero": {
+    "slide1": { "title": "Integrated Health Center", "subtitle": "Easy booking & precise appointments for all clinics", "cta": "Book Now" },
+    "slide2": { "title": "Specialized Doctors", "subtitle": "Top medical expertise in one place", "cta": "Doctors List" },
+    "slide3": { "title": "Care & Support", "subtitle": "Day-long support for booking & confirmations", "cta": "Contact Us" },
+    "slide4": { "title": "Multi-Clinic Center", "subtitle": "Dermatology – Dental – Pediatrics – Internal…", "cta": "See Services" },
+    "slide5": { "title": "Comfort & Safety", "subtitle": "Safe environment with full sanitization", "cta": "About Us" }
+  },
+
+  "strip": { "call": "Give us a Call", "message": "Send us a Message", "visit": "Visit our Location" },
+
+  "highlights": {
+    "topDoctors": "Top Doctors",
+    "topDoctorsTxt": "Highly qualified specialists across all clinics.",
+    "service24": "24 Hours Service",
+    "service24Txt": "Support team ready to help with bookings and confirmations.",
+    "hours": "Opening Hours",
+    "readMore": "Read More",
+    "monFri": "Monday – Friday",
+    "sat": "Saturday",
+    "sun": "Sunday"
+  },
+
+  "features": {
+    "title": "Awesome Theme for Medical and Health Websites",
+    "subtitle": "A clean, modern layout built for clinics and health centers.",
+    "treatment": "Medical Treatment",
+    "treatmentTxt": "Comprehensive treatments with expert doctors.",
+    "emergency": "Emergency Help",
+    "emergencyTxt": "Quick assistance and responsive support.",
+    "professionals": "Medical professionals",
+    "professionalsTxt": "Certified professionals across all departments.",
+    "qualified": "Qualified Doctors",
+    "qualifiedTxt": "Experienced specialists you can trust."
+  },
+  "services": {
+    "sidebarTitle": "Departments",
+    "viewAll": "View all",
+    "kicker": "Innovation",
+    "title": "Our Services",
+  "lab": "Laboratory Analysis",
+  "peds": "Pediatric Clinic",
+  "ent": "Laryngological Clinic",
+  "card": "Cardiac Clinic",
+  "opht": "Ophthalmology Clinic",
+  "rehab": "Outpatient Rehabilitation",
+  "cardExcerpt": "Short description about this department and the most common procedures."
+},
+"testimonials": {
+  "kicker": "Testimonials",
+  "title": "What our patients say",
+  "subtitle": "Real experiences from our visitors and patients.",
+  "quote": "Patient Review",
+  "items": [
+    { "name": "M. Alharbi", "role": "Patient", "text": "Very organized reception and the doctor listened carefully. Booking was smooth." },
+    { "name": "N. Alshehri", "role": "Patient", "text": "Clean clinic and friendly staff. I got my results quickly." },
+    { "name": "A. Khan", "role": "Visitor", "text": "Great experience overall, highly recommended for pediatric care." }
+  ]
+},
+"stats": {
+  "items": [
+    { "value": 100,  "label": "Quality",              "suffix": "%" },
+    { "value": 2480, "label": "Patients a year" },
+    { "value": 26,   "label": "People working" },
+    { "value": 38,   "label": "Years of experience" },
+    { "value": 7856, "label": "Happy Smiles" }
+  ]
+},
+
+"docs": {
+  "kicker": "Professionals",
+  "gridTitle": "Our Doctors",
+  "aboutShort": "Short bio about the doctor's experience and most common procedures.",
+  "michael": "Dr. Michael Linden",
+  "max": "Dr. Max Turner",
+  "amy": "Dr. Amy Adams",
+  "julia": "Dr. Julia Jameson",
+  "throat": "Throat Specialist",
+  "cardiologist": "Cardiologist",
+  "rehab": "Rehabilitation Therapy",
+  "peds": "Pediatrician"
+},
+
+"news": {
+  "kicker": "Latest News",
+  "title": "Be the first to read",
+  "items": [
+    { "id": "post-1", "date": "November 20, 2015", "title": "How to Handle Your Kids’ Mystery Ailments", "excerpt": "Short intro about the topic and general tips for parents…", "to": "/blog/post-1" },
+    { "id": "post-2", "date": "November 15, 2015", "title": "Do You Know the ABCs of Health Care?", "excerpt": "Quick summary with best practices…", "to": "/blog/post-2" },
+    { "id": "post-3", "date": "November 10, 2015", "title": "Kids’ Health Questions", "excerpt": "Most common questions with concise answers…", "to": "/blog/post-3" }
+  ]
+},
+"faq": {
+  "kicker": "FAQ",
+  "title": "Have some Questions?",
+  "items": [
+    {"q":"What are your regular office hours?","a":"Our clinic is open…"},
+    {"q":"What is your appointment policy?","a":"You can book, cancel…"},
+    {"q":"What should I do if I’m ill?","a":"Call us or book online…"},
+    {"q":"How do I get a refill on my prescription?","a":"Request refill via…"}
+  ]
+},
+
+  "footer": {
+    "cta": "Need help or want to book an appointment? We’re happy to assist.",
+    "call": "Call now",
+    "book": "Book appointment",
+    "altLogo": "Healthy Clinics",
+    "about": "An integrated health center with multi-specialty clinics, top doctors, and all-day customer support.",
+    "quick": "Quick links",
+    "contact": "Contact us",
+    "address": "Abu Bakr As-Siddiq Rd, Al Areej/Al A'aridh, Riyadh, Saudi Arabia",
+    "hours": "Daily 9:00 AM – 10:00 PM",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "clinic": {
+    "derma": "Dermatology",
+    "dental": "Dental",
+    "peds": "Pediatrics",
+    "internal": "Internal Medicine",
+    "ent": "ENT"
+  }
+}
+
+
+
