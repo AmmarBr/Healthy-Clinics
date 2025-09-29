@@ -24,7 +24,7 @@ export default function Highlights({ hours }) {
 
   // خلفيات متدرجة من اللون الرئيسي
   const bgA = "bg-[linear-gradient(135deg,color-mix(in_oklab,var(--color-primary)_92%,#000),color-mix(in_oklab,var(--color-primary)_75%,#000))]";
-  const bgB = "bg_[linear-gradient(135deg,color-mix(in_oklab,var(--color-primary)_84%,#000),color-mix(in_oklab,var(--color-primary)_62%,#000))]".replace("_","-");
+ const bgB = "bg-[linear-gradient(135deg,color-mix(in_oklab,var(--color-primary)_84%,#000),color-mix(in_oklab,var(--color-primary)_62%,#000))]";
   const bgC = "bg-[linear-gradient(135deg,color-mix(in_oklab,var(--color-primary)_76%,#000),color-mix(in_oklab,var(--color-primary)_54%,#000))]";
 
   const cardBase = "relative overflow-hidden rounded-2xl p-8 text-white shadow-sm [text-shadow:0_1px_1px_rgba(0,0,0,.25)]";

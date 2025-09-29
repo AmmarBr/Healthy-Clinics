@@ -9,12 +9,14 @@ import StatsBand from '../components/StatsBand'
 import DoctorsGrid from '../components/DoctorsGrid'
 import NewsSection from '../components/NewsSection'
 import FaqAccordion from '../components/FaqAccordion'
+import BookingAndVideo from '../components/BookingAndVideo'
 
 export default function Home() {
   return (
     <div>
       <HeroSwiper/>
       <ContactStrip/>
+      <BookingAndVideo/>
       <Highlights/>
       <FeatureShowcase/>
       <ServicesCarousel/>

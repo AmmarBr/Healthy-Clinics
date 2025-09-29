@@ -1,0 +1,10 @@
+{
+  "book": "Book appointment",
+  "allServices": "All services",
+  "relatedDoctors": "Our doctors in this department",
+  "notFound": "Department not found",
+  "back": "Back",
+  "call": "Call",
+  "email": "Email",
+  "noDoctors": "No doctors linked to this department yet."
+}

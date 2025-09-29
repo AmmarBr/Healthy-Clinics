@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "About our Clinic",
+    "subtitle": "We deliver high-quality medical care with a professional team of doctors and specialists. Our clinic is equipped with the latest technology to ensure the best outcomes.",
+    "cta": "View All Departments",
+    "alt": "Clinic team at work"
+  },
+  "welcome": {
+    "kicker": "Professionals",
+    "title": "Welcome to Medical Clinic",
+    "alt": "Medical Clinic building",
+    "who": {
+      "title": "Who we are?",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum massa vel enim feugiat gravida. Phasellus velit risus, euismod a lacus et, mattis condimentum augue."
+    }
+},
+ "faq": {
+    "kicker": "الأسئلة الشائعة",
+    "title": "هل لديك أسئلة؟",
+    "items": [
+      { "q": "ما هي مواعيد العمل؟", "a": "نعمل يوميًا من 9 صباحًا حتى 10 مساءً، مع دعم للطوارئ." },
+      { "q": "ما هي سياسة المواعيد؟", "a": "يمكنك الحجز أو الإلغاء أو إعادة الجدولة عبر حسابك أو الهاتف." },
+      { "q": "ماذا أفعل إذا كنت مريضًا؟", "a": "تواصل معنا أو احجز زيارة عاجلة عبر الموقع." },
+      { "q": "كيف أجدد وصفتي الطبية؟", "a": "اطلب التجديد من خلال حسابك أو خدمة العملاء." }
+    ]
+  },"care": {
+    "kicker": "المتخصصون",
+    "title": "نحن نهتم بك",
+    "items": [
+      {
+        "title": "اعتنِ بصحتك",
+        "text": "من الثابت أن المحتوى المقروء قد يُلهي القارئ عن التركيز على شكل الصفحة أثناء النظر إلى مخططها.",
+        "img": "/assets/about/care-1.jpg",
+        "alt": "فريق جراحة"
+      },
+      {
+        "title": "الرعاية الصحية الأولية",
+        "text": "رعاية أولية تركز على الوقاية والتثقيف الصحي والمتابعة المنتظمة.",
+        "img": "/assets/about/care-2.jpg",
+        "alt": "فريق الرعاية الأولية"
+      },
+      {
+        "title": "نحقق رعاية صحية أفضل",
+        "text": "نحسّن عملياتنا باستمرار للوصول إلى نتائج علاجية أفضل.",
+        "img": "/assets/about/care-3.jpg",
+        "alt": "فحص العيون"
+      }
+    ]
+  }
+}

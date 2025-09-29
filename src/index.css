@@ -35,3 +35,23 @@ body { font-family: var(--font-sans); background: var(--color-neutral-50); color
   background: var(--color-primary);
   opacity: 1;
 }
+
+
+/* Light / Dark base using your tokens */
+:root {
+  /* لايت */
+  --bg: var(--color-neutral-50);
+  --fg: var(--color-neutral-900);
+}
+.dark {
+  /* دارك */
+  --bg: var(--color-neutral-900);
+  --fg: var(--color-neutral-50);
+}
+
+/* طبّقهم على الصفحة */
+body { background: var(--bg); color: var(--fg); }
+
+/* تحسينات فوكس بسيطة */
+:root { --ring: var(--color-primary); }
+:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }

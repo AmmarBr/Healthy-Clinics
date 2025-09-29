@@ -1,0 +1,45 @@
+{
+  "title": "Book an Appointment",
+  "cta": "Confirm booking",
+  "anyDoctor": "Any available doctor",
+  "fields": {
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "dept": "Department",
+    "doctor": "Doctor",
+    "date": "Date",
+    "time": "Time",
+    "note": "Note"
+  },
+  "ph": {
+    "name": "Your full name",
+    "email": "name@example.com",
+    "phone": "+966 5x xxx xxxx",
+    "dept": "Select department",
+    "doctor": "Any available doctor",
+    "date": "Select date",
+    "time": "Select time",
+    "note": "Optional note..."
+  },
+  "errors": {
+    "required": "Please fill all required fields.",
+    "email": "Invalid email address."
+  },
+  "msg": {
+    "header": "New appointment request",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "dept": "Department",
+    "doctor": "Doctor",
+    "date": "Date",
+    "time": "Time",
+    "note": "Note"
+  },
+  "mail": {
+    "subject": "Appointment",
+    "footer": "Sent from Healthy Clinics website."
+  },
+  "sent": "Opened WhatsApp & Email composer with your booking details."
+}

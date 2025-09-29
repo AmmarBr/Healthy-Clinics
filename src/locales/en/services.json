@@ -1,0 +1,29 @@
+{
+  "title": "Our Services",
+  "subtitle": "Browse clinics and departments, then open details or book.",
+  "searchPlaceholder": "Search clinic/department",
+  "filterAll": "All",
+  "open": "Open details",
+  "book": "Book appointment",
+
+  "clinics": {
+    "ladies": "Ladies Club",
+    "internal": "Internal Medicine",
+    "general": "General Medicine",
+    "laser": "Laser & Aesthetics",
+    "opht": "Ophthalmology",
+    "pharmacy": "Pharmacy",
+    "lab": "Laboratory",
+    "dialysis": "Dialysis Department",
+    "emergency": "Emergency",
+    "ortho": "Orthopedics",
+    "dental": "Dental Clinic",
+    "gyne": "Obstetrics & Gynecology",
+    "peds": "Pediatrics",
+    "xray": "Radiology",
+    "derma": "Dermatology",
+    "ent": "ENT Clinic",
+    "physio": "Physiotherapy",
+    "skinCare": "Skin Care Department"
+  }
+}

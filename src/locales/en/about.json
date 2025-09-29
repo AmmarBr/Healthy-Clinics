@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "About our Clinic",
+    "subtitle": "We deliver high-quality medical care with a professional team of doctors and specialists. Our clinic is equipped with the latest technology to ensure the best outcomes.",
+    "cta": "View All Departments",
+    "alt": "Clinic team at work"
+  },
+  "welcome": {
+    "kicker": "Professionals",
+    "title": "Welcome to Medical Clinic",
+    "alt": "Medical Clinic building",
+    "who": {
+      "title": "Who we are?",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum massa vel enim feugiat gravida. Phasellus velit risus, euismod a lacus et, mattis condimentum augue."
+    }
+},
+ "faq": {
+    "kicker": "FAQ",
+    "title": "Have some Questions?",
+    "items": [
+      { "q": "What are your regular office hours?", "a": "We’re open daily 9:00 AM – 10:00 PM, with emergency support." },
+      { "q": "What is your appointment policy?", "a": "You can book, cancel, or reschedule via your account or phone." },
+      { "q": "What should I do if I’m ill?", "a": "Contact us or book an urgent visit through the website." },
+      { "q": "How do I get a refill on my prescription?", "a": "Request a refill from your account or customer support." }
+    ]
+  },"care": {
+    "kicker": "Professionals",
+    "title": "We Care About You",
+    "items": [
+      {
+        "title": "Embrace your Health",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "img": "/assets/about/care-1.jpg",
+        "alt": "Surgery team"
+      },
+      {
+        "title": "Primary Health Care",
+        "text": "Primary care that focuses on prevention, wellness, and patient education.",
+        "img": "/assets/about/care-2.jpg",
+        "alt": "Primary care team"
+      },
+      {
+        "title": "Achieving Better Health Care",
+        "text": "We continuously improve our processes to deliver better clinical outcomes.",
+        "img": "/assets/about/care-3.jpg",
+        "alt": "Ophthalmology check"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "title": "Our Professional Team",
+    "subtitle": "A highly qualified team of specialists. Book now or browse the right specialty for your case.",
+    "cta": "Book Appointment",
+    "alt": "Doctors team"
+  },
+
+  "featured": {
+    "kicker": "Professionals",
+    "title": "Chief of Medicine",
+    "viewClinic": "View Clinic"
+  },
+
+  "list": {
+    "title": "Our Doctors",
+    "subtitle": "Meet our team of highly qualified specialists.",
+    "searchPlaceholder": "Search by name or specialty",
+    "all": "All",
+    "noResults": "No doctors found."
+  },
+
+  "card": {
+    "specialty": "Specialty",
+    "viewProfile": "View profile"
+  },
+
+  "detail": {
+    "notFound": "Doctor not found.",
+    "back": "Go back",
+    "aboutDoctor": "About the Doctor",
+    "contactInfo": "Contact Information",
+    "bookAppointment": "Book Appointment",
+    "department": "Department",
+    "viewClinic": "View Clinic"
+  },
+  "profile": {
+    "notFound": "Doctor not found.",
+    "back": "Go back",
+    "details": "Profile details",
+    "likes": "Likes",
+    "specialty": "Speciality",
+    "degree": "Degree",
+    "degree.default": "M.D. of Medicine",
+    "address": "Address",
+    "address.default": "Address not provided",
+    "phone": "Phone",
+    "email": "Email",
+    "category": "Category",
+    "na": "N/A",
+    "bioFallback": "Professional physician providing high-quality care to patients."
+  }
+}
