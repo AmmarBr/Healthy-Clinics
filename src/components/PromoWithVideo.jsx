@@ -34,7 +34,7 @@ export default function PromoWithVideo({
     <>
       <div
         className={`z-20 relative w-full px-4 sm:px-6 lg:px-8
-                    md:absolute md:left-4 md:inset-0 md:flex md:items-center ${posClass}
+                    md:absolute  md:inset-0 md:flex md:items-center ${posClass}
                     pointer-events-none`}
         aria-hidden={showVideo}
       >
