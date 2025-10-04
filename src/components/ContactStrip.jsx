@@ -1,15 +1,15 @@
 import React from "react";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { FaWhatsapp } from "react-icons/fa"; // أيقونة واتساب
 
 function normalizeTel(v = "") {
-  // يحوّل 00966 -> +966 ويشيل أي مسافات/رموز غير لازمة
   return v.trim().replace(/^00/, "+").replace(/[^\d+]/g, "");
 }
 
 export default function ContactStrip({
-  phone = "009660118342222",
-  email = "info@healthyclinics-sa.com",
+  phone = "009660118342222", // رقم الهاتف الأساسي
+  whatsapp = "009660118342222", // رقم واتساب
   address = "طريق ابي بكر الصديق، العارض، الرياض المملكة العربية السعودية",
   mapsUrl = "https://maps.app.goo.gl/PV9YoKP6CzapriLU8",
 }) {
@@ -19,23 +19,26 @@ export default function ContactStrip({
   const items = [
     {
       Icon: Phone,
-      title: t("strip.call"),
+      title: t("strip.call", "اتصل الآن"),
       value: phone,
       href: `tel:${normalizeTel(phone)}`,
       external: false,
     },
     {
-      Icon: Mail,
-      title: t("strip.message"),
-      value: email,
-      href: `mailto:${email}`,
-      external: false,
+      Icon: FaWhatsapp,
+      title: t("strip.whatsapp", "واتساب"),
+      value: normalizeTel(whatsapp),
+      href: `https://wa.me/${normalizeTel(whatsapp)}?text=${encodeURIComponent(
+        "السلام عليكم، أريد حجز موعد"
+      )}`,
+      external: true,
     },
+
     {
       Icon: MapPin,
-      title: t("strip.visit"),
+      title: t("strip.visit", "زورنا"),
       value: address,
-      href: mapsUrl, // ثابت/قصير من جوجل مابس - تمام
+      href: mapsUrl,
       external: true,
     },
   ];
@@ -53,8 +56,8 @@ export default function ContactStrip({
               ${idx !== 0 ? "border-t sm:border-t-0 ltr:sm:border-l rtl:sm:border-r border-black/5 dark:border-white/10" : ""}`}
               aria-label={`${it.title}: ${it.value}`}
             >
-              <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[--color-primary]">
-                <it.Icon size={20} color="var(--color-primary)" className="[stroke-width:2]" />
+              <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[--color-primary] bg-white/10">
+                <it.Icon size={22} color="var(--color-primary)" className="[stroke-width:2]" />
               </span>
               <div className={`${isAr ? "text-right" : "text-left"}`}>
                 <div className="text-gray-500 text-sm">{it.title}</div>

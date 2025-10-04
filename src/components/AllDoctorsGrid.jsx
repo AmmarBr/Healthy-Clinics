@@ -5,7 +5,8 @@ import { Phone, Mail } from "lucide-react";
 
 import { DOCTORS } from "../lib/doctors";
 import { DEPARTMENTS } from "../lib/departments";
-
+import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import reallogo from "../assets/Saudi_Riyal_Symbol.svg.png";
 // تطبيع للبحث بالعربي/إنجليزي
 function norm(s = "") {
   return s
@@ -123,18 +124,18 @@ export default function AllDoctorsGrid() {
                     <div className="mt-3 flex flex-wrap items-center gap-4 text-sm">
                       {d.phone && (
                         <a className="inline-flex items-center gap-2 text-neutral-800 dark:text-neutral-200"
-                           href={`tel:${normTel(d.phone)}`}>
+                          href={`tel:${normTel(d.phone)}`}>
                           <Phone size={16} className="opacity-70" />
                           <span dir="ltr">{d.phone}</span>
                         </a>
                       )}
-                      {d.email && (
-                        <a className="inline-flex items-center gap-2 text-neutral-800 dark:text-neutral-200"
-                           href={`mailto:${d.email}`}>
-                          <Mail size={16} className="opacity-70" />
-                          <span>{d.email}</span>
-                        </a>
-                      )}
+                      <div className="inline-flex items-center gap-2 text-neutral-800 dark:text-neutral-200">
+                        <RiMoneyDollarCircleLine size={18} className={`text-[--color-primary]`} />
+                        <span className="font-medium">
+                          {t("list.price", "Consultation Fee")}:{" "}
+                          <strong className="text-[--color-primary]">100 <img src={reallogo} alt="ريال" className="inline-block w-4 h-4 bg-white" /></strong>
+                        </span>
+                      </div>
                     </div>
                   )}
 

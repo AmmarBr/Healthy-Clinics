@@ -123,8 +123,8 @@ export default function BookingWidget({
   };
 
   return (
-    <section className="rounded-2xl border bg-neutral-50 dark:bg-neutral-900
-                        border-black/10 dark:border-white/10 p-5">
+    <section  className="max-w-lg mx-auto rounded-2xl border bg-neutral-50 dark:bg-neutral-900
+             border-black/10 dark:border-white/10 p-6 sm:p-8 mt-10">
       <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50 mb-4">
         {t("title", "Book an Appointment")}
       </h3>

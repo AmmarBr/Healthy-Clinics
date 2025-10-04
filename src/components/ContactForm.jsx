@@ -29,7 +29,7 @@ export default function ContactForm() {
 
   return (
     <div className="rounded-2xl border bg-neutral-50 dark:bg-neutral-900
-                    border-black/10 dark:border-white/10">
+                    border-black/10 dark:border-white/10 h-full ">
       <div className="px-5 py-4 border-b border-black/10 dark:border-white/10">
         <h3 className="font-semibold text-neutral-900 dark:text-neutral-50">
           {t("form.title", "Send us a message")}

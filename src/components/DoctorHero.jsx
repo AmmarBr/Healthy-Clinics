@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-
+import imgpanr from '../assets/doctor panar.jpg';
 /**
  * DoctorHero
  * Props:
@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
  * - ctaHref: رابط الزر (افتراضي /contact)
  */
 export default function DoctorHero({
-  img = "/assets/banners/doctors-hero.jpg",
+  img = { imgpanr },
   title,
   subtitle,
   ctaText,
@@ -24,7 +24,7 @@ export default function DoctorHero({
     <section className="relative h-[46vh] min-h-[360px] w-full overflow-hidden">
       {/* الخلفية */}
       <img
-        src={img}
+        src={imgpanr}
         alt={t("hero.alt", "Doctors team")}
         className="absolute inset-0 h-full w-full object-cover"
         loading="eager"

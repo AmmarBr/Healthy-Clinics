@@ -9,7 +9,12 @@
     "slide5": { "title": "Comfort & Safety", "subtitle": "Safe environment with full sanitization", "cta": "About Us" }
   },
 
-  "strip": { "call": "Give us a Call", "message": "Send us a Message", "visit": "Visit our Location" },
+   "strip": {
+    "call": "Call Us",
+    "whatsapp": "WhatsApp",
+    "message": "Email Us",
+    "visit": "Visit Us"
+  },
 
   "highlights": {
     "topDoctors": "Top Doctors",
@@ -123,7 +128,19 @@
     "peds": "Pediatrics",
     "internal": "Internal Medicine",
     "ent": "ENT"
+  },
+  
+  "promo": {
+    "welcome": "Welcome to Healthy Clinics",
+    "headline": "Your health and your family’s health are our top priority",
+    "subtitle": "An integrated facility built to CBAHI standards",
+    "paragraph": "At Healthy Clinics, we put your health and the health of your family first. We are here to provide the best comprehensive and reliable healthcare for you and your loved ones.",
+    "cta": "Book Appointment",
+    "playLabel": "Play intro video",
+    "closeVideo": "Close video"
   }
+
+
 }
 
 

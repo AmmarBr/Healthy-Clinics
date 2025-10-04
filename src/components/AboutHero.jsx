@@ -1,9 +1,9 @@
 // src/components/AboutHero.jsx
 import React from "react";
 import { useTranslation } from "react-i18next";
-
+import imgpanr from '../assets/1-2.jpg' // غيّر المسار حسب الصورة عندك
 export default function AboutHero({
-  img = "/assets/banners/about-hero.jpg", // غيّر المسار حسب الصورة عندك
+  img = imgpanr,
   title,
   subtitle,
   ctaText,

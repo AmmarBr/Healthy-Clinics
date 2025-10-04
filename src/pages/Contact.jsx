@@ -1,10 +1,9 @@
-// src/pages/Contact.jsx
 import React from "react";
 import { useTranslation } from "react-i18next";
 import ContactForm from "../components/ContactForm";
 import ContactStrip from "../components/ContactStrip";
-// import BookingWidget from "../components/BookingWidget"; // لو هتستخدم الحجز
-
+import BookingWidget from "../components/BookingWidget"; // لو هتستخدم الحجز
+import imghero from "../assets/Contact-us-2500px.webp";
 export default function Contact() {
   const { t, i18n } = useTranslation("contact");
   const isAr = i18n.language?.startsWith("ar");
@@ -12,15 +11,15 @@ export default function Contact() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative h-[40vh] min-h-[320px] overflow-hidden">
+      <section className="relative h-[40vh] min-h-[75vh] overflow-hidden">
         <img
-          src="/assets/banners/contact-hero.jpg"
+          src={imghero}
           alt={t("hero.alt", "Clinic front desk")}
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-black/45" />
-        <div className="relative z-10 h-full max-w-7xl mx-auto flex items-center px-4 sm:px-6 lg:px-8">
-          <div className={`${isAr ? "text-right ml-auto" : "text-left"} text-white max-w-2xl`}>
+        <div className="relative z-10 h-full max-w-7xl mx-auto flex items-center justify-center px-4 sm:px-6 lg:px-8">
+          <div className={`text-center  text-white max-w-2xl`}>
             <h1 className="text-3xl sm:text-4xl font-extrabold">
               {t("hero.title", "Contact Us")}
             </h1>
@@ -113,6 +112,8 @@ export default function Contact() {
             </div>
           </aside>
         </div>
+                  <BookingWidget/>
+
       </section>
     </main>
   );

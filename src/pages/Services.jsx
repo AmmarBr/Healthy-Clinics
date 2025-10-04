@@ -53,7 +53,7 @@ export default function Services() {
         </header>
 
         {/* الفلترة */}
-        <div className="mb-8 grid gap-3 md:grid-cols-[1fr,220px]">
+        <div className="mb-8 grid gap-3 md:grid-cols-2">
           <label className="flex items-center gap-2 rounded-2xl border px-3 py-2 shadow-sm
                             border-neutral-900/15 bg-neutral-50 text-neutral-900
                             dark:border-neutral-50/15 dark:bg-neutral-900 dark:text-neutral-50">
@@ -84,7 +84,7 @@ export default function Services() {
         </div>
 
         {/* الكروت */}
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {filtered.map((d) => (
             <article
               key={d.slug}
@@ -102,7 +102,7 @@ export default function Services() {
 
               <div className="h-48 w-full overflow-hidden">
                 <img
-                  src={d.cover || "/assets/clinic-placeholder.jpg"}
+                  src={d.banner || "/assets/clinic-placeholder.jpg"}
                   alt={label(d.nameAr, d.nameEn)}
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                   loading="lazy"
