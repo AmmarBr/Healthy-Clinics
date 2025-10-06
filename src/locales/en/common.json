@@ -16,17 +16,18 @@
     "visit": "Visit Us"
   },
 
-  "highlights": {
-    "topDoctors": "Top Doctors",
-    "topDoctorsTxt": "Highly qualified specialists across all clinics.",
-    "service24": "24 Hours Service",
-    "service24Txt": "Support team ready to help with bookings and confirmations.",
-    "hours": "Opening Hours",
-    "readMore": "Read More",
-    "monFri": "Monday – Friday",
-    "sat": "Saturday",
-    "sun": "Sunday"
-  },
+ "highlights": {
+  "topDoctors": "Top Doctors",
+  "topDoctorsTxt": "A team of highly qualified specialists ensuring premium medical care.",
+  "service24": "24-Hour Service",
+  "service24Txt": "We provide round-the-clock emergency medical services to ensure your safety.",
+  "readMore": "Read more",
+  "hours": "Working Hours",
+  "emergency": "Emergency Department",
+  "clinics": "Clinics (Saturday to Thursday)",
+  "friday": "Friday",
+  "off": "Closed"
+},
 
   "features": {
     "title": "Awesome Theme for Medical and Health Websites",
@@ -55,13 +56,13 @@
 },
 "testimonials": {
   "kicker": "Testimonials",
-  "title": "What our patients say",
-  "subtitle": "Real experiences from our visitors and patients.",
-  "quote": "Patient Review",
+  "title": "What our clients say",
+  "subtitle": "Real experiences from our visitors and clients.",
+  "quote": "Client Review",
   "items": [
-    { "name": "M. Alharbi", "role": "Patient", "text": "Very organized reception and the doctor listened carefully. Booking was smooth." },
-    { "name": "N. Alshehri", "role": "Patient", "text": "Clean clinic and friendly staff. I got my results quickly." },
-    { "name": "A. Khan", "role": "Visitor", "text": "Great experience overall, highly recommended for pediatric care." }
+    { "name": "M. Alharbi", "role": "Client", "text": "Very organized reception and the doctor listened carefully. Booking was smooth." },
+    { "name": "N. Alshehri", "role": "Client", "text": "Clean clinic and friendly staff. I got my results quickly." },
+    { "name": "A. Khan", "role": "Client", "text": "Great experience overall, highly recommended for pediatric care." }
   ]
 },
 "stats": {
@@ -98,15 +99,40 @@
   ]
 },
 "faq": {
-  "kicker": "FAQ",
-  "title": "Have some Questions?",
+  "kicker": "Frequently Asked Questions",
+  "title": "Answers to Common Inquiries",
   "items": [
-    {"q":"What are your regular office hours?","a":"Our clinic is open…"},
-    {"q":"What is your appointment policy?","a":"You can book, cancel…"},
-    {"q":"What should I do if I’m ill?","a":"Call us or book online…"},
-    {"q":"How do I get a refill on my prescription?","a":"Request refill via…"}
+    { 
+      "q": "Do you offer stitch removal?", 
+      "a": "Yes, available in the Emergency Department 24 hours a day without an appointment." 
+    },
+    { 
+      "q": "Do you offer ear piercing?", 
+      "a": "Yes, piercing with a medical gun is available daily in the Emergency Department without an appointment. 70 SAR with our medical earring / 50 SAR if you bring your own." 
+    },
+    { 
+      "q": "How much does an X-ray cost?", 
+      "a": "It depends on the area to be examined. (When the area is determined, please ask the Radiology Department for the price)." 
+    },
+    { 
+      "q": "What is the price of the comprehensive lab test?", 
+      "a": "We offer the 'Your Health' and 'Your Health Plus' packages for 999 SAR." 
+    },
+    { 
+      "q": "What is the price for intramuscular injection?", 
+      "a": "Available in the Emergency Department 24 hours a day without an appointment. The price is 10 SAR." 
+    },
+    { 
+      "q": "What is the price for iron injection?", 
+      "a": "It depends on the prescription — whether it is an iron ampoule or Eprex (Epoetin)." 
+    },
+    { 
+      "q": "What is the price for nebulizer therapy?", 
+      "a": "It depends on the prescription. A medical prescription is required. The nebulizer starts from 70 SAR / If there is no prescription, a 50 SAR consultation with the general practitioner is required." 
+    }
   ]
-},
+}
+,
 
   "footer": {
     "cta": "Need help or want to book an appointment? We’re happy to assist.",

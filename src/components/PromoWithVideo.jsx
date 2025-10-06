@@ -5,7 +5,7 @@ export default function PromoWithVideo({
   youtubeId,
   badgeImg,
   badgeAlt = "Badge",
-  welcome = "مرحباً بكم في عيادات هلثي",
+  welcome = "مرحباً بكم في عيادات هيلثي",
   headline = "صحتك وصحة عائلتك هي من أولوياتنا",
   subTitle = "صرح متكامل تم إنشاؤه على مواصفات سباهي",
   paragraph = "",
@@ -49,7 +49,7 @@ export default function PromoWithVideo({
             dark:bg-neutral-900/80 dark:text-neutral-100 dark:border-white/10 dark:backdrop-blur-sm
             /* Overlay look للشاشات الكبيرة */
             md:bg-black/20 md:text-white md:border-white/10 md:backdrop-blur-sm
-            dark:md:bg-black/30
+            dark:md:bg-white/20
           `}
         >
           {/* الشعار */}
@@ -57,7 +57,7 @@ export default function PromoWithVideo({
             <img
               src={badgeImg}
               alt={badgeAlt}
-              className="h-14 sm:h-16 w-auto mx-auto mb-4"
+              className="h-20 sm:h-28 w-auto mx-auto mb-4"
               loading="lazy"
             />
           )}

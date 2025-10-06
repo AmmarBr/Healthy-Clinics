@@ -129,13 +129,7 @@ export default function AllDoctorsGrid() {
                           <span dir="ltr">{d.phone}</span>
                         </a>
                       )}
-                      <div className="inline-flex items-center gap-2 text-neutral-800 dark:text-neutral-200">
-                        <RiMoneyDollarCircleLine size={18} className={`text-[--color-primary]`} />
-                        <span className="font-medium">
-                          {t("list.price", "Consultation Fee")}:{" "}
-                          <strong className="text-[--color-primary]">100 <img src={reallogo} alt="ريال" className="inline-block w-4 h-4 bg-white" /></strong>
-                        </span>
-                      </div>
+                     
                     </div>
                   )}
 

@@ -1,9 +1,9 @@
 {
-  "title": "Our Services",
-  "subtitle": "Browse clinics and departments, then open details or book.",
-  "searchPlaceholder": "Search clinic/department",
+  "title": "Our Medical Services",
+  "subtitle": "Explore our clinics and departments, view details, or book an appointment.",
+  "searchPlaceholder": "Search for a clinic or department",
   "filterAll": "All",
-  "open": "Open details",
+  "open": "View details",
   "book": "Book appointment",
 
   "clinics": {
@@ -15,7 +15,7 @@
     "pharmacy": "Pharmacy",
     "lab": "Laboratory",
     "dialysis": "Dialysis Department",
-    "emergency": "Emergency",
+    "emergency": "Emergency Department",
     "ortho": "Orthopedics",
     "dental": "Dental Clinic",
     "gyne": "Obstetrics & Gynecology",
@@ -25,5 +25,26 @@
     "ent": "ENT Clinic",
     "physio": "Physiotherapy",
     "skinCare": "Skin Care Department"
+  },
+
+  "descriptions": {
+    "ladies": "A private women-only facility designed for comfort, wellness, and physical fitness in a safe environment.",
+    "internal": "Provides diagnosis and treatment for diseases affecting internal organs such as heart, lungs, and digestive system.",
+    "general": "Primary healthcare and preventive services for all ages with a focus on wellness and family care.",
+    "laser": "Offers advanced cosmetic and laser treatments for skin, hair, and rejuvenation using the latest technology.",
+    "opht": "Comprehensive eye care services including vision correction, diagnostics, and minor surgical procedures.",
+    "pharmacy": "Fully stocked pharmacy offering prescribed medications and pharmaceutical consultations.",
+    "lab": "Advanced laboratory performing diagnostic tests and analyses to ensure accurate medical assessments.",
+    "dialysis": "Specialized care for kidney patients with state-of-the-art dialysis equipment and experienced staff.",
+    "emergency": "Round-the-clock emergency services providing rapid response and immediate medical attention.",
+    "ortho": "Diagnosis and treatment of musculoskeletal and bone conditions including fractures and sports injuries.",
+    "dental": "Comprehensive dental care including orthodontics, cosmetic dentistry, and oral surgery.",
+    "gyne": "Comprehensive women’s health services including pregnancy follow-up, delivery, and reproductive care.",
+    "peds": "Dedicated pediatric department providing expert medical care for infants, children, and adolescents.",
+    "xray": "Modern radiology department equipped for X-rays, ultrasound, and advanced imaging diagnostics.",
+    "derma": "Dermatology department offering treatments for skin, hair, and nail conditions with advanced procedures.",
+    "ent": "Specialized ENT clinic diagnosing and treating ear, nose, and throat disorders with modern equipment.",
+    "physio": "Physiotherapy and rehabilitation services to restore movement, strength, and physical well-being.",
+    "skinCare": "Skin care and aesthetics department offering facials, rejuvenation, and non-surgical cosmetic procedures."
   }
 }

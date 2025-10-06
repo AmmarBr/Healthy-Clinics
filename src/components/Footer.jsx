@@ -1,4 +1,5 @@
-import React from "react";
+// src/components/Footer.jsx
+import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Phone, Mail, MapPin, Clock,
@@ -6,10 +7,22 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { DEPARTMENTS } from "../lib/departments";
 
 const BrandIcon = ({ as: Icon, size = 16, className = "" }) => (
   <Icon size={size} color="var(--color-primary)" className={`[stroke-width:2] ${className}`} />
 );
+
+const normTel = (v = "") => v.trim().replace(/^00/, "+").replace(/[^\d+]/g, "");
+
+// تقسيم إلى عمودين فقط
+function toColumns(list, cols = 2) {
+  const out = Array.from({ length: cols }, () => []);
+  list.forEach((item, idx) => {
+    out[idx % cols].push(item);
+  });
+  return out;
+}
 
 export default function Footer() {
   const { t, i18n } = useTranslation("common");
@@ -23,17 +36,26 @@ export default function Footer() {
     "طريق ابي بكر الصديق، العارض، الرياض، المملكة العربية السعودية"
   );
 
+  // كل العيادات من DEPARTMENTS
+  const clinicColumns = useMemo(() => {
+    const list = (DEPARTMENTS || []).map(d => ({
+      to: `/clinics/${d.slug}`,
+      label: isAr ? d.nameAr : d.nameEn,
+    }));
+    return toColumns(list, 2);
+  }, [isAr]);
+
   return (
     <footer className="mt-16 bg-gray-50 dark:bg-gray-950 border-t border-black/5 dark:border-white/10">
-      {/* شريط CTA صغير (اختياري) */}
-      <div className="py-6">
+      {/* شريط الاتصال العلوي */}
+      <div className="py-6 border-b border-black/5 dark:border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
           <p className="text-gray-700 dark:text-gray-300">
             {t("footer.cta", "هل تحتاج مساعدة أو تريد حجز موعد؟ يسعدنا خدمتك.")}
           </p>
           <div className="flex gap-3">
             <a
-              href={`tel:${phone.replace(/[^+\d]/g, "")}`}
+              href={`tel:${normTel(phone)}`}
               className="inline-flex items-center gap-2 rounded-xl px-4 py-2 border border-[--color-primary] text-[--color-primary] hover:bg-[--color-primary] hover:text-white transition"
             >
               <BrandIcon as={Phone} />
@@ -41,7 +63,7 @@ export default function Footer() {
             </a>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-[--color-primary] text-white hover:opacity-90 transition"
+              className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-[--color-primary] dark:text-white text-black hover:opacity-90 transition"
             >
               {t("footer.book", "احجز موعد")}
             </Link>
@@ -51,8 +73,8 @@ export default function Footer() {
 
       {/* الجسم الرئيسي */}
       <div className="py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8">
-          {/* 1) البراند + نبذة + سوشيال */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6">
+          {/* 1) الشعار + نبذة + سوشيال */}
           <div className="lg:col-span-4">
             <Link to="/" className="inline-flex items-center gap-3">
               <img src={logo} alt={t("footer.altLogo", "Healthy Clinics")} className="h-12 w-auto" />
@@ -65,19 +87,19 @@ export default function Footer() {
             </p>
 
             <div className="mt-4 flex gap-2">
-              <a href="#" aria-label="Facebook"
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                  className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">
                 <BrandIcon as={Facebook} />
               </a>
-              <a href="#" aria-label="Instagram"
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                  className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">
                 <BrandIcon as={Instagram} />
               </a>
-              <a href="#" aria-label="LinkedIn"
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
                  className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">
                 <BrandIcon as={Linkedin} />
               </a>
-              <a href="#" aria-label="YouTube"
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
                  className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">
                 <BrandIcon as={Youtube} />
               </a>
@@ -85,35 +107,44 @@ export default function Footer() {
           </div>
 
           {/* 2) روابط سريعة */}
-          <div className="lg:col-span-3">
+          <nav className="lg:col-span-2">
             <h3 className="font-semibold text-gray-900 dark:text-white">
               {t("footer.quick", "روابط سريعة")}
             </h3>
             <ul className={`mt-4 space-y-3 ${isAr ? "text-right" : "text-left"}`}>
-              <li><Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]"> {t("nav.home", "الرئيسية")} </Link></li>
-              <li><Link to="/services" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]"> {t("nav.services", "الخدمات")} </Link></li>
-              <li><Link to="/doctors" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]"> {t("nav.doctors", "الأطباء")} </Link></li>
-              <li><Link to="/about" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]"> {t("nav.about", "من نحن")} </Link></li>
-              <li><Link to="/contact" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]"> {t("nav.contact", "تواصل معنا")} </Link></li>
+              <li><Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("nav.home", "الرئيسية")}</Link></li>
+              <li><Link to="/services" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("nav.services", "الخدمات")}</Link></li>
+              <li><Link to="/doctors" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("nav.doctors", "الأطباء")}</Link></li>
+              <li><Link to="/about" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("nav.about", "من نحن")}</Link></li>
+              <li><Link to="/contact" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("nav.contact", "تواصل معنا")}</Link></li>
             </ul>
-          </div>
+          </nav>
 
-          {/* 3) خدمات/عيادات (أمثلة) */}
-          <div className="lg:col-span-2">
+          {/* 3) عيادات (عمودان فقط) */}
+          <div className="lg:col-span-4">
             <h3 className="font-semibold text-gray-900 dark:text-white">
               {t("footer.services", "العيادات")}
             </h3>
-            <ul className={`mt-4 space-y-3 ${isAr ? "text-right" : "text-left"}`}>
-              <li><Link to="/clinics/derma" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("clinic.derma", "الجلدية")}</Link></li>
-              <li><Link to="/clinics/dental" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("clinic.dental", "الأسنان")}</Link></li>
-              <li><Link to="/clinics/peds" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("clinic.peds", "الأطفال")}</Link></li>
-              <li><Link to="/clinics/internal" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("clinic.internal", "الباطنة")}</Link></li>
-              <li><Link to="/clinics/ent" className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]">{t("clinic.ent", "الأنف والأذن")}</Link></li>
-            </ul>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+              {clinicColumns.map((col, idx) => (
+                <ul key={idx} className={`space-y-3 ${isAr ? "text-right" : "text-left"}`}>
+                  {col.map((item) => (
+                    <li key={item.to}>
+                      <Link
+                        to={item.to}
+                        className="text-gray-600 dark:text-gray-300 hover:text-[--color-primary]"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </div>
           </div>
 
           {/* 4) تواصل معنا */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-2">
             <h3 className="font-semibold text-gray-900 dark:text-white">
               {t("footer.contact", "تواصل معنا")}
             </h3>
@@ -124,7 +155,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <BrandIcon as={Phone} />
-                <a href={`tel:${phone.replace(/[^+\d]/g, "")}`} className="hover:text-[--color-primary]">{phone}</a>
+                <a href={`tel:${normTel(phone)}`} className="hover:text-[--color-primary]">{phone}</a>
               </li>
               <li className="flex items-center gap-3">
                 <BrandIcon as={Mail} />
