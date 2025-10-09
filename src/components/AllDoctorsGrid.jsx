@@ -100,7 +100,7 @@ export default function AllDoctorsGrid() {
                            border-neutral-900/10 dark:border-neutral-50/10
                            hover:shadow-lg transition"
               >
-                <div className="h-48 w-full overflow-hidden">
+                <div className="h-auto w-full overflow-hidden">
                   <img
                     src={d.photo || "/assets/doctor-placeholder.jpg"}
                     alt={name}

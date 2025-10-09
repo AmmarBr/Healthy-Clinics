@@ -58,7 +58,12 @@ export default function DoctorDetails() {
   const dept = DEPARTMENTS.find((d) => d.slug === doc.deptSlug);
   const deptName = dept ? (lng === "ar" ? dept.nameAr : dept.nameEn) : spec;
 
-  const degree = doc.degree || t("profile.degree.default", "M.D. of Medicine");
+  // داخل DoctorDetails.jsx قبل الاستخدام
+  const degree =
+    (lng === "ar" ? doc.degreeAr : doc.degreeEn) ||
+    doc.degree ||
+    t("profile.degree.default", "M.D. of Medicine");
+
   const address = doc.address || t("profile.address.default", "Address not provided");
   const bio = lng === "ar" ? (doc.bioAr || doc.bioEn) : (doc.bioEn || doc.bioAr);
 
@@ -72,11 +77,11 @@ export default function DoctorDetails() {
 
       {/* المحتوى */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-6  lg:grid-cols-[1fr,380px]">
+        <div className="grid  gap-6  lg:grid-cols-2">
           {/* الصورة + الوصف (يسار) */}
           <div className="rounded-2xl overflow-hidden border
                           bg-neutral-50 dark:bg-neutral-900
-                          border-neutral-900/10 dark:border-neutral-50/10">
+                          border-neutral-900/10 dark:border-neutral-50/10 grid-cols-2">
             <div className="h-[360px] sm:h-[420px] w-full overflow-hidden">
               <img
                 src={doc.photo || "/assets/doctor-placeholder.jpg"}
@@ -106,7 +111,7 @@ export default function DoctorDetails() {
           </div>
 
           {/* التفاصيل (يمين) */}
-          <aside className="space-y-6 ">
+          <aside className="space-y-6 grid-cols-2">
             {/* بطاقة التفاصيل */}
             <div className="rounded-2xl border bg-neutral-50 dark:bg-neutral-900
                             border-neutral-900/10 dark:border-neutral-50/10">
@@ -121,7 +126,7 @@ export default function DoctorDetails() {
                 <Row label={t("profile.specialty", "Speciality")} value={spec} />
                 <Row label={t("profile.category", "Category")} value={deptName} />
                 <Row label={t("profile.degree", "Degree")} value={degree} />
-                <Row label={t("profile.address", "Address")} value={address} />
+                
                 <Row
                   label={t("profile.phone", "Phone")}
                   value={

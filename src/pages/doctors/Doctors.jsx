@@ -10,11 +10,11 @@ export default function Doctors() {
   return (
     <main>
       <DoctorHero />
-      <FeaturedDoctor
+      {/* <FeaturedDoctor
         title={t("featured.title", "Chief of Medicine")}
         kicker={t("featured.kicker", "Professionals")}
         doctor={featured}   // 👈 مهم
-      />
+      /> */}
       <AllDoctorsGrid/>
     </main>
   );

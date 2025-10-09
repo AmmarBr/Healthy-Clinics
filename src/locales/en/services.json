@@ -1,10 +1,20 @@
 {
-  "title": "Our Medical Services",
-  "subtitle": "Explore our clinics and departments, view details, or book an appointment.",
-  "searchPlaceholder": "Search for a clinic or department",
+  "title": "Our Medical Departments",
+  "subtitle": "Browse through our clinics and departments, view details, or book an appointment easily.",
+  "searchPlaceholder": "Search for a department or clinic...",
   "filterAll": "All",
-  "open": "View details",
-  "book": "Book appointment",
+  "open": "Open details",
+  "book": "Book now",
+  "noResults": "No matching results found.",
+
+  "notFound": "Clinic not found.",
+  "back": "Go back",
+  "backToList": "Back to Clinics List",
+  "bookAppointment": "Book Appointment",
+    "servicesOfClinic": "Clinic Services",
+  "doctorsOfClinic": "Doctors in this Department",
+  "viewDoctor": "View Doctor",
+
 
   "clinics": {
     "ladies": "Ladies Club",

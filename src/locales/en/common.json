@@ -19,8 +19,8 @@
  "highlights": {
   "topDoctors": "Top Doctors",
   "topDoctorsTxt": "A team of highly qualified specialists ensuring premium medical care.",
-  "service24": "24-Hour Service",
-  "service24Txt": "We provide round-the-clock emergency medical services to ensure your safety.",
+  "service24": "Our integrated medical services",
+  "service24Txt": "We provide a comprehensive range of medical and cosmetic services with the highest quality standards, to meet your needs and take care of your health and beauty in one place.",
   "readMore": "Read more",
   "hours": "Working Hours",
   "emergency": "Emergency Department",
@@ -143,7 +143,7 @@
     "quick": "Quick links",
     "contact": "Contact us",
     "address": "Abu Bakr As-Siddiq Rd, Al Areej/Al A'aridh, Riyadh, Saudi Arabia",
-    "hours": "Daily 9:00 AM – 10:00 PM",
+    "hours": "Saturday to Thursday: 9:30 AM - 1:30 PM, Friday: Closed",
     "rights": "All rights reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions"

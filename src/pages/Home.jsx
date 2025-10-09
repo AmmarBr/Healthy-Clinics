@@ -13,6 +13,7 @@ import BookingWidget from '../components/BookingWidget'
 import PromoWithVideo from '../components/PromoWithVideo'
 import badgeImg from '../assets/cbahi5-150x150.png'
 import { useTranslation } from 'react-i18next'
+import BrandsCarousel from '../components/BrandsCarousel'
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -29,13 +30,15 @@ export default function Home() {
         paragraph={t("promo.paragraph")}
         ctaText={t("promo.cta")}
       />
+      <BrandsCarousel/>
+      <FeatureShowcase />
+      <ServicesCarousel />
+      <DoctorsGrid />
       <BookingWidget
         clinicWhatsApp="+201028526504"
         clinicEmail="ammarbrakat731@gmail.com"
       />
-      <FeatureShowcase />
-      <ServicesCarousel />
-      <DoctorsGrid />
+      
       <NewsSection />
       <TestimonialsOverlay />
       {/* <StatsBand /> */}

@@ -22,9 +22,9 @@ export const DEPARTMENTS = [
     nameEn: "General Medicine & Emergency",
     cover: "/assets/departments/general-er.jpg",
     descriptionAr:
-      "يقدّم القسم رعاية صحية أولية وتشخيص دقيق لمختلف الحالات، مع التعامل مع الحالات الطارئة وتحويل المرضى للمتخصص المناسب.",
+      "يتميز أطباؤنا بالكفاءة والفعالية في تقديم الرعاية الصحية الأولية لمرضانا والقدرة على تشخيص الأمراض المختلفة بدقة متناهية وتحويل المريض على الطبيب المختص بحالته الطبية.",
     descriptionEn:
-      "Primary care and accurate diagnosis for a wide range of conditions, with emergency handling and proper referrals to specialists.",
+      "Our doctors are efficient and effective in providing primary health care to our patients and has the ability to diagnose various diseases with extreme accuracy and refer the patient to physicians who specializes in medical condition.",
     servicesAr: ["فحوصات شاملة", "علاج الجروح والعمليات البسيطة", "حالات الطوارئ", "زيارات منزلية"],
     servicesEn: ["Comprehensive checkups", "Minor procedures & wound care", "Emergency care", "Home visits"]
   },
@@ -34,9 +34,9 @@ export const DEPARTMENTS = [
     nameEn: "Dental Department",
     cover: "/assets/departments/dental.jpg",
     descriptionAr:
-      "نعمل بأحدث التقنيات في تجميل وزراعة الأسنان وعلاج اللثة والخراجات بإشراف استشاريين متخصصين.",
+      "نسعى في عياداتنا لتقديم أحدث الأساليب والأجهزة والمواد الطبية في علاجات الأسنان وتجميلها وتعويضها، وزراعة الأسنان على يد أخصائيين واستشاريين في طب الفم والأسنان وجراحتها.",
     descriptionEn:
-      "State-of-the-art dental care for implants, aesthetics, gum disease and abscesses under experienced consultants.",
+      "In our clinics, we strive to provide (innovative care and specialized treatments from orthodontics to oral medicine to best suit their individual needs) with the latest methods, devices, and medical materials in dental treatments, beautification, and replace them with dental implants by the specialists and consultants in oral and dental medicine and surgery.",
     servicesAr: ["زراعة الأسنان", "تجميل الأسنان", "تبييض", "علاج اللثة والخراجات"],
     servicesEn: ["Dental implants", "Cosmetic dentistry", "Teeth whitening", "Gum & abscess treatment"]
   },
@@ -46,9 +46,9 @@ export const DEPARTMENTS = [
     nameEn: "Dermatology & Cosmetology",
     cover: "/assets/departments/dermatology.jpg",
     descriptionAr:
-      "خدمات جلدية وتجميلية متكاملة مع الحفاظ على الخصوصية واستخدام أجهزة آمنة وحديثة.",
+      "تقديم أفضل الخدمات العلاجية والتجميلية، ونحرص على توفير الخصوصية والشفافية، ونقدم في قسم الجلدية والتجميل أحدث التقنيات وأفضل العلاجات الآمنة في المعالجة والتشخيص.",
     descriptionEn:
-      "Comprehensive dermatology and cosmetic services with privacy and modern, safe equipment.",
+      "Providing the best medical and cosmetic services, and we are keen to provide privacy and transparency. In the Dermatology and Cosmetology department, we offer the latest technologies and the best safe medical care in treatment and diagnosis",
     servicesAr: ["ليزر إزالة الشعر", "بوتكس/فيلر/بلازما", "علاج حب الشباب", "إزالة الشامات والتاتو"],
     servicesEn: ["Laser hair removal", "Botox/Fillers/PRP", "Acne management", "Mole & tattoo removal"]
   },
@@ -58,9 +58,9 @@ export const DEPARTMENTS = [
     nameEn: "Skincare",
     cover: "/assets/departments/skincare.jpg",
     descriptionAr:
-      "برامج متخصصة لنضارة البشرة وتجديدها والحد من علامات التقدّم في السن.",
+      "البشرة اليافعة مطلب كل إنسان، وليس المطلب الرئيسي متى نضارة البشرة فقط، بل المحافظة عليها وإبعاد شبح معالم الشيخوخة خاصة المبكرة التي لا يكون لعاملي السن والزمان دخل فيها.",
     descriptionEn:
-      "Targeted programs for skin glow, renewal and anti-aging.",
+      "Beautiful skin is a greater signifier of youthful looks. We offer a comprehensive range of treatments which are effective solutions and regimens to the visible signs of ageing, that renews back the skin to a glowing dew.",
     servicesAr: ["تنظيف عميق", "جلسات فيتامين C", "ماسكات كولاجين", "ميزوثيرابي", "علاج البشرة الجافة"],
     servicesEn: ["Deep cleansing", "Vitamin C facials", "Collagen masks", "Mesotherapy", "Dry skin protocols"]
   },
@@ -70,9 +70,9 @@ export const DEPARTMENTS = [
     nameEn: "Obstetrics & Gynecology",
     cover: "/assets/departments/obgyn.jpg",
     descriptionAr:
-      "رعاية شاملة للمرأة بجميع مراحلها العمرية بإشراف نخبة من الاستشاريين.",
+      "يقدم قسم النساء والولادة خدمات نسائية شاملة لجميع مراجعِي القسم من كافة الفئات العمرية، بتوفير نخبة من أفضل الاستشاريين والأخصائيين في مجالاتهم، وتقديم أعلى مستويات الرعاية والاهتمام بالمرضى من النساء.",
     descriptionEn:
-      "Comprehensive women’s health across all life stages under expert consultants.",
+      "The Department of Obstetrics and Gynecology provides comprehensive (women's services throughout all phases of woman’s life) to all department auditors of all age groups, by providing a selection of the best consultants and specialists in their field, providing the highest levels of care and attention to women’s health needs.",
     servicesAr: ["متابعة الحمل", "علاج العقم", "كشف مبكر لأورام الثدي", "تجميل نسائي"],
     servicesEn: ["Antenatal care", "Infertility management", "Breast cancer screening", "Aesthetic gynecology"]
   },
@@ -82,9 +82,9 @@ export const DEPARTMENTS = [
     nameEn: "Internal Medicine",
     cover: "/assets/departments/internal-med.jpg",
     descriptionAr:
-      "تشخيص وعلاج الأمراض المزمنة والطارئة مثل السكري والضغط وأمراض المعدة والقولون.",
+      "عيادة الباطنية في عيادات هيلثي تعمل على تشخيص وعلاج الأمراض الطارئة والمزمنة تحت إشراف أخصائيين واستشاريين.",
     descriptionEn:
-      "Diagnosis and management of chronic and acute diseases like diabetes, hypertension, and GI disorders.",
+      "The Internal Medicine Clinic at Healthy Clinics works on diagnosing and treating emergency and chronic diseases under the supervision of specialists and consultants.",
     servicesAr: ["السكر والضغط", "جرثومة المعدة", "أمراض القولون", "أمراض الكبد والكوليسترول"],
     servicesEn: ["Diabetes & hypertension", "H. pylori", "Colon disorders", "Liver & cholesterol"]
   },
@@ -94,9 +94,9 @@ export const DEPARTMENTS = [
     nameEn: "Ophthalmic Unit",
     cover: "/assets/departments/ophthalmology.jpg",
     descriptionAr:
-      "فحوصات نظر شاملة وضغط وقاع العين، مع خيارات ليزر وتصحيح الإبصار.",
+      "العيادة مجهزة بأحدث الأجهزة التشخيصية لفحص النظر وضغط العين وفحص قاع العين، وتقوم بعمل مقاسات النظر وتصحيح الانكسار لكل الأعمار.",
     descriptionEn:
-      "Complete vision, IOP and fundus exams with laser clinics and refractive options.",
+      "The clinic is equipped with the latest diagnostic equipment to check vision, eye pressure, and fundus examination, and it performs vision measurements and refractive correction for all ages.",
     servicesAr: ["فحص النظر", "ضغط العين", "قاع العين", "عيادات الليزر", "تصحيح الإبصار"],
     servicesEn: ["Vision test", "Intraocular pressure", "Fundus exam", "Laser clinics", "Refractive correction"]
   },
@@ -106,9 +106,9 @@ export const DEPARTMENTS = [
     nameEn: "Orthopedics & Spine",
     cover: "/assets/departments/orthopedics.jpg",
     descriptionAr:
-      "رعاية كاملة لمشاكل العظام والمفاصل والعمود الفقري باستخدام أحدث التقنيات.",
+      "قسم طب العظام يوفر خدمات متعددة للمرضى الذين يعانون من مشاكل في العظام والمفاصل، وذلك باستخدام أحدث التقنيات والأساليب العلاجية، ونحرص من خلال هذا القسم على تقديم رعاية عالية الجودة.",
     descriptionEn:
-      "Comprehensive care for bone, joint and spine conditions with modern techniques.",
+      "The Department of Orthopedics provides multiple services to patients with bone & joint problems, using the latest technologies and treatment methods. Through this department, we are keen to provide high-quality care.",
     servicesAr: ["الكسور", "الانزلاق الغضروفي", "هشاشة العظام", "الروماتيزم", "عرق النساء"],
     servicesEn: ["Fractures", "Disc herniation", "Osteoporosis", "Rheumatology", "Sciatica"]
   },
@@ -118,9 +118,9 @@ export const DEPARTMENTS = [
     nameEn: "Rehabilitation & Physiotherapy",
     cover: "/assets/departments/physiotherapy.jpg",
     descriptionAr:
-      "علاج الألم وتحسين الحركة باستخدام أجهزة حديثة وتقنيات علاج يدوي.",
+      "ملتزمون بمساعدتك على حل آلامك والتعافي من إصاباتك، نسعى جاهدين لتحسين ذاتك من أجل الوقاية من الإصابات في المستقبل، بمساعدة أخصائيي العلاج الطبيعي ذوي الخبرة لدينا.",
     descriptionEn:
-      "Pain management and functional improvement using modern devices and manual therapy.",
+      "Committed in helping to resolve your pain and recover from your injuries, we strive to improve your performance in order to prevent future injuries with the help of our experienced physiotherapists.",
     servicesAr: ["العلاج الكهربائي", "الإبر الجافة", "تأهيل ما بعد الإصابات", "برامج وقائية"],
     servicesEn: ["Electrotherapy", "Dry needling", "Post-injury rehab", "Preventive programs"]
   },
@@ -130,9 +130,9 @@ export const DEPARTMENTS = [
     nameEn: "ENT",
     cover: "/assets/departments/ent.jpg",
     descriptionAr:
-      "تشخيص وعلاج مشاكل الأنف والأذن والحنجرة بأحدث التقنيات.",
+      "يمتلك أطباء هذا القسم خبرات طويلة في تشخيص ومعالجة مشكلات أمراض الأنف والأذن والحنجرة، على قدر كبير من الاحترافية والقدرة على التعامل مع أحدث التكنولوجيا العلاجية لتخليص المرضى من معاناتهم في كل ما يتعلق بمشاكل الأنف والأذن والحنجرة.",
     descriptionEn:
-      "Diagnosis and treatment of ear, nose and throat conditions with advanced techniques.",
+      "The doctors of this department have extensive and comprehensive experience in diagnosing and treating ear, nose and throat problems with a great deal of professionalism and the ability to deal with the latest treatment technology to rid patients of their suffering in everything related to ear, nose and throat problems.",
     servicesAr: ["بحة الصوت", "الجيوب الأنفية", "طنين الأذن", "التهابات الأنف", "تقييم السمع"],
     servicesEn: ["Hoarseness", "Sinusitis", "Tinnitus", "Rhinitis", "Hearing assessment"]
   },
@@ -142,9 +142,9 @@ export const DEPARTMENTS = [
     nameEn: "Pediatrics",
     cover: "/assets/departments/pediatrics.jpg",
     descriptionAr:
-      "رعاية صحية متكاملة للأطفال من حديثي الولادة حتى المراهقة بإشراف استشاريين.",
+      "تقديم خدمة سريعة لجميع أمراض الأطفال الطارئة والمزمنة، وتقديم التحصينات اللازمة تحت إشراف استشاريين سعوديين وأخصائيين ذوي خبرة وكفاءة عالية.",
     descriptionEn:
-      "Comprehensive pediatric care from newborn to adolescence under consultants.",
+      "We aim to provide the best healthcare we can, ensuring appropriate treatments and stress-free environment as possible with clinical areas that is bright and child-friendly spaces. Providing a quick service for all children’s emergency and chronic diseases. Providing the necessary immunizations under the supervision of Saudi consultants and specialists with high experience and competence.",
     servicesAr: ["التطعيمات", "فحوصات شاملة", "متابعة النمو", "الأمراض المزمنة"],
     servicesEn: ["Vaccinations", "Well-child checkups", "Growth monitoring", "Chronic disease care"]
   },
@@ -154,9 +154,9 @@ export const DEPARTMENTS = [
     nameEn: "Central Laboratory",
     cover: "/assets/departments/lab.jpg",
     descriptionAr:
-      "مختبر متكامل لإجراء جميع أنواع التحاليل بدقة عالية وفق المعايير.",
+      "قسم متكامل لكافة أنواع الفحوصات، حرصنا في هذا القسم على توفير أفضل وأحدث الأجهزة الطبية لإجراء كافة التحاليل بدقة وجودة عالية، يحتوي المختبر على أحدث الأجهزة التقنية لعمل جميع أنواع التحاليل للحصول على أدق النتائج بأسرع وقت.",
     descriptionEn:
-      "Fully-equipped lab delivering accurate diagnostics aligned with standards.",
+      "A complete department for all types of examinations. In this department, we are keen to provide the best and latest medical devices to perform all analysis with accuracy and high quality. The laboratory contains the latest technological devices in performing all types of analysis to obtain the most accurate results in the fastest time.",
     servicesAr: ["تحاليل فيتامينات", "سكري", "فيروسات", "روماتيزم", "تحاليل العمالة"],
     servicesEn: ["Vitamin panels", "Diabetes", "Viral tests", "Rheumatology", "Pre-employment tests"]
   },
@@ -166,9 +166,9 @@ export const DEPARTMENTS = [
     nameEn: "Radiology",
     cover: "/assets/departments/radiology.jpg",
     descriptionAr:
-      "قسم متخصص يقدّم جميع أنواع الأشعة باستخدام تقنيات حديثة.",
+      "يقدم هذا القسم الهام جدًا أغلب أنواع الأشعة التي يحتاجها المريض، وتحت كفاءات مدربة وذوي خبرة عالية.",
     descriptionEn:
-      "Full radiology services using modern imaging technologies.",
+      "This very important section provides most types of radiology that the patient needs, performed by highly skilled and competent workforce. This very important section provides most types of radiology that the patient needs, performed by highly skilled and competent workforce.",
     servicesAr: ["بانوراما أسنان", "أشعة عادية", "ألتراساوند", "أشعة مقطعية/رنين (حسب التجهيز)"],
     servicesEn: ["Dental panorama", "X-ray", "Ultrasound", "CT/MRI (if available)"]
   },
@@ -178,9 +178,9 @@ export const DEPARTMENTS = [
     nameEn: "Central Sterilization",
     cover: "/assets/departments/cssd.jpg",
     descriptionAr:
-      "تعقيم وغسل الأدوات والمعدات الطبية بأحدث الأجهزة وفق المعايير العالمية.",
+      "يحتوي قسم التعقيم المركزي على أجهزة لغسل وتطهير وتعقيم جميع الأدوات والمعدات في العيادات والأقسام وتجهيزها تحت إشراف وتدريب من قسم مكافحة العدوى. يتوفر في القسم أجهزة التعقيم بالضغط والحرارة العالية وذلك حسب السياسات والمواصفات العالمية، كما تم توفير أجهزة التعقيم البارد لتعقيم الأجهزة الحساسة والصغيرة.",
     descriptionEn:
-      "Central unit for cleaning and sterilizing medical instruments per global standards.",
+      "The central sterilization department contains devices for washing, disinfecting and sterilizing all tools and equipment. The department has devices for sterilization by pressure and high temperature, according to international policies and specifications. Cold sterilization devices have also been provided to sterilize sensitive and small devices.",
     servicesAr: ["غسل وتعقيم الأدوات", "تتبع دورات التعقيم", "ضمان الجودة"],
     servicesEn: ["Instrument cleaning & sterilization", "Cycle tracking", "Quality assurance"]
   },
@@ -190,9 +190,9 @@ export const DEPARTMENTS = [
     nameEn: "Dialysis Unit",
     cover: "/assets/departments/dialysis.jpg",
     descriptionAr:
-      "خدمات غسيل الكلى اليومية بأحدث الأجهزة وتحت إشراف مختصين مع متابعة دقيقة للمريض.",
+      "نعتني بمرضى الفشل الكلوي ونقدم لهم خدمات الغسيل يوميًا.",
     descriptionEn:
-      "Daily hemodialysis services with modern machines under specialist supervision and close follow-up.",
+      "We care for patients with kidney failure and provide daily dialysis services. We offer hemodialysis and peritoneal dialysis treatments to a diverse group of patients who have chronic or long-term kidney failure.  ",
     servicesAr: ["غسيل دموي", "متابعة تغذوية", "مراقبة أدوية ومؤشرات حيوية"],
     servicesEn: ["Hemodialysis", "Dietary follow-up", "Medication & biomarker monitoring"]
   }

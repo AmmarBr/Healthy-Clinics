@@ -9,14 +9,15 @@
   "featured": {
     "kicker": "Professionals",
     "title": "Chief of Medicine",
-    "viewClinic": "View Clinic"
+    "viewClinic": "View Clinic",
+    "view": "View Profile"
   },
 
-  "list": {
+   "list": {
     "title": "Our Doctors",
-    "subtitle": "Meet our team of highly qualified specialists.",
-    "searchPlaceholder": "Search by name or specialty",
-    "all": "All",
+    "search": "Search by name or specialty",
+    "open": "View profile",
+    "book": "Book appointment",
     "noResults": "No doctors found."
   },
 
@@ -24,7 +25,7 @@
     "specialty": "Specialty",
     "viewProfile": "View profile"
   },
-
+ 
   "detail": {
     "notFound": "Doctor not found.",
     "back": "Go back",
@@ -35,19 +36,34 @@
     "viewClinic": "View Clinic"
   },
   "profile": {
-    "notFound": "Doctor not found.",
-    "back": "Go back",
     "details": "Profile details",
-    "likes": "Likes",
-    "specialty": "Speciality",
+    "specialty": "Specialty",
     "degree": "Degree",
-    "degree.default": "M.D. of Medicine",
     "address": "Address",
-    "address.default": "Address not provided",
     "phone": "Phone",
     "email": "Email",
-    "category": "Category",
+    "category": "Department",
     "na": "N/A",
-    "bioFallback": "Professional physician providing high-quality care to patients."
+    "bioFallback": "Professional physician providing high-quality care to patients.",
+    "notFound": "Doctor not found.",
+    "back": "Go back to list"
+  },
+    "listHeader": {
+    "filterAll": "All",
+    "department": "Department",
+    "doctors": "Doctors"
+  },
+    "actions": {
+    "call": "Call Now",
+    "email": "Send Email",
+    "backToList": "Back to Doctors List"
+  },
+   "social": {
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "youtube": "YouTube"
   }
+ 
 }

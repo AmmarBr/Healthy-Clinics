@@ -21,7 +21,7 @@ export default function DoctorHero({
   const isAr = i18n.language?.startsWith("ar");
 
   return (
-    <section className="relative h-[46vh] min-h-[360px] w-full overflow-hidden">
+    <section className="relative h-[60vh] min-h-[360px] w-full overflow-hidden">
       {/* الخلفية */}
       <img
         src={imgpanr}
@@ -33,8 +33,8 @@ export default function DoctorHero({
       <div className="absolute inset-0 bg-black/45" />
 
       {/* المحتوى */}
-      <div className="relative z-10 mx-auto h-full max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center">
-        <div className={`${isAr ? "text-right" : "text-left"} max-w-2xl`}>
+      <div className="relative z-10 mx-auto h-full max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-center text-center">
+        <div className={`text-center max-w-2xl`}>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
             {title ?? t("hero.title")}
           </h1>
