@@ -9,10 +9,10 @@ import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import img1 from "../assets/1.jpg";
-import img2 from "../assets/2.jpg";
-import img3 from "../assets/3.jpg";
-import img4 from "../assets/4.jpg";
+// import img1 from "../assets/1.jpg";
+// import img2 from "../assets/2.jpg";
+// import img3 from "../assets/3.jpg";
+// import img4 from "../assets/4.jpg";
 
 export default function NewsSection({ posts: postsProp, autoplayDelay = 4000 }) {
   const { t, i18n } = useTranslation("common");
@@ -30,7 +30,7 @@ export default function NewsSection({ posts: postsProp, autoplayDelay = 4000 }) 
         excerpt: isAr
           ? "تعرف على أفضل الممارسات للحفاظ على صحة العائلة في الحياة اليومية وتجنب الأمراض الموسمية."
           : "Learn best practices to keep your family healthy and avoid seasonal diseases.",
-        img: img1,
+        img: '/',
         to: "/blog/post-1",
       },
       {
@@ -40,7 +40,7 @@ export default function NewsSection({ posts: postsProp, autoplayDelay = 4000 }) 
         excerpt: isAr
           ? "الفحوصات الدورية تساعد في اكتشاف الأمراض مبكرًا وتحسين جودة الحياة بشكل ملحوظ."
           : "Regular checkups help detect diseases early and improve quality of life significantly.",
-        img: img2,
+        img: '/',
         to: "/blog/post-2",
       },
       {
@@ -50,7 +50,7 @@ export default function NewsSection({ posts: postsProp, autoplayDelay = 4000 }) 
         excerpt: isAr
           ? "طرق فعالة لتقوية مناعة الأطفال من خلال التغذية السليمة والنشاط البدني المنتظم."
           : "Effective ways to strengthen children’s immunity through proper nutrition and exercise.",
-        img: img3,
+        img: '/',
         to: "/blog/post-3",
       },
       {
@@ -60,7 +60,7 @@ export default function NewsSection({ posts: postsProp, autoplayDelay = 4000 }) 
         excerpt: isAr
           ? "النوم الكافي يساعد على تجديد طاقة الجسم وتعزيز التركيز والمناعة بشكل طبيعي."
           : "Adequate sleep helps restore energy and enhances focus and immunity naturally.",
-        img: img4,
+        img: '/',
         to: "/blog/post-4",
       },
     ];

@@ -41,7 +41,7 @@
     "degree": "Degree",
     "address": "Address",
     "phone": "Phone",
-    "email": "Email",
+    "whatsapp": "Chat on WhatsApp", 
     "category": "Department",
     "na": "N/A",
     "bioFallback": "Professional physician providing high-quality care to patients.",

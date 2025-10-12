@@ -1,12 +1,8 @@
-// src/lib/doctors.js\
-import img1 from "../assets/Pi7_image_tool (1).jpeg";
-import img2 from "../assets/Pi7_image_tool.jpeg";
-import img3 from "../assets/Artboard 111.png";
 import img4 from "../assets/Artboard 2 copy.jpg";
 export const DOCTORS = [
   {
     id: "karim-nassar",
-    nameAr: "دكتور كريم نصار",
+    nameAr: "د/ كريم نصار",
     nameEn: "Dr. Karim Nassar",
     specialtyAr: "نائب طب وجراحه العيون",
     specialtyEn: "Ophthalmology (Deputy Ophthalmic Surgeon)",
@@ -24,7 +20,7 @@ export const DOCTORS = [
 
   {
     id: "omar-tawfik",
-    nameAr: "دكتور عمر توفيق",
+    nameAr: "د/ عمر توفيق",
     nameEn: "Dr. Omar Tawfik",
     specialtyAr: "إخصائي طب وجراحة العظام والعمود الفقري",
     specialtyEn: "Orthopedics & Spine Specialist",
@@ -42,7 +38,7 @@ export const DOCTORS = [
 
   {
     id: "heba-hashim",
-    nameAr: "دكتورة هبه هاشم",
+    nameAr: "د/ هبه هاشم",
     nameEn: "Dr. Heba Hashim",
     specialtyAr: "أخصائية طب الأطفال وحديثى الولادة",
     specialtyEn: "Pediatrics & Neonatology Specialist",
@@ -60,7 +56,7 @@ export const DOCTORS = [
 
   {
     id: "marwa-nabil",
-    nameAr: "دكتورة مروة نبيل",
+    nameAr: "د/ مروة نبيل",
     nameEn: "Dr. Marwa Nabil",
     specialtyAr: "مقيم طب الأطفال وحديثي الولادة",
     specialtyEn: "General Pediatrics & Neonatology",
@@ -78,7 +74,7 @@ export const DOCTORS = [
 
   {
     id: "may-alqurashi",
-    nameAr: "دكتورة مى القرشي",
+    nameAr: "د/ مى القرشي",
     nameEn: "Dr. Mai Al-Qurashi",
     specialtyAr: "اخصائية تقنية أشعة",
     specialtyEn: "Radiology Technologist",
@@ -94,7 +90,7 @@ export const DOCTORS = [
 
   {
     id: "sarah-nazih",
-    nameAr: "دكتورة ساره نزيه",
+    nameAr: "د/ ساره نزيه",
     nameEn: "Dr. Sarah Nazih",
     specialtyAr: "أخصائي علاج طبيعي",
     specialtyEn: "Physiotherapy Specialist",
@@ -110,7 +106,7 @@ export const DOCTORS = [
 
   {
     id: "salwan-hatem",
-    nameAr: "دكتورة سلوان حاتم",
+    nameAr: "د/ سلوان حاتم",
     nameEn: "Dr. Salwan Hatem",
     specialtyAr: "طبيب أسنان عام",
     specialtyEn: "General Dentist",
@@ -128,7 +124,7 @@ export const DOCTORS = [
 
   {
     id: "ashraf-osman",
-    nameAr: "دكتور اشرف عثمان",
+    nameAr: "د/ اشرف عثمان",
     nameEn: "Dr. Ashraf Osman",
     specialtyAr: "اخصائى الامراض الباطنية والسكر",
     specialtyEn: "Internal Medicine & Diabetes Specialist",
@@ -146,7 +142,7 @@ export const DOCTORS = [
 
   {
     id: "malak-abdullah",
-    nameAr: "دكتور ملاك عبدالله شحاته",
+    nameAr: "د/ ملاك عبدالله شحاته",
     nameEn: "Dr. Malak Abdullah Shahata",
     specialtyAr: "أخصائي جراحة الأنف والأذن والحنجرة والرأس والعنق",
     specialtyEn: "ENT & Head-Neck Surgery Specialist",
@@ -164,7 +160,7 @@ export const DOCTORS = [
 
   {
     id: "thuraya-ashour",
-    nameAr: "دكتورة ثريا عاشور",
+    nameAr: "د/ ثريا عاشور",
     nameEn: "Dr. Thuraya Ashour",
     specialtyAr: "نائب مختبرات",
     specialtyEn: "Laboratory (Deputy Specialist)",
@@ -180,7 +176,7 @@ export const DOCTORS = [
 
   {
     id: "mohamed-halaby",
-    nameAr: "دكتور محمد الحلبي",
+    nameAr: "د/ محمد الحلبي",
     nameEn: "Dr. Mohamed El-Halaby",
     specialtyAr: "أخصائي جراحة الفم وزراعة الأسنان",
     specialtyEn: "Oral Surgery & Implant Specialist",
@@ -198,7 +194,7 @@ export const DOCTORS = [
 
   {
     id: "eman-nada",
-    nameAr: "دكتورة ايمان ندا",
+    nameAr: "د/ ايمان ندا",
     nameEn: "Dr. Eman Nada",
     specialtyAr: "اخصائية النساء والتوليد",
     specialtyEn: "OB/GYN Specialist",
@@ -216,7 +212,7 @@ export const DOCTORS = [
 
   {
     id: "raneem-ahmed",
-    nameAr: "دكتورة رنيم احمد",
+    nameAr: "د/ رنيم احمد",
     nameEn: "Dr. Raneem Ahmed",
     specialtyAr: "اخصائية الجلدية والتجميل والليزر",
     specialtyEn: "Dermatology, Aesthetics & Laser Specialist",
@@ -234,7 +230,7 @@ export const DOCTORS = [
 
   {
     id: "hessa-alrashid",
-    nameAr: "دكتورة حصة الرشيد",
+    nameAr: "د/ حصة الرشيد",
     nameEn: "Dr. Hessa Al-Rashid",
     specialtyAr: "استشاري النساء والتوليد",
     specialtyEn: "Consultant OB/GYN",

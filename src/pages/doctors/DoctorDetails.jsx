@@ -2,12 +2,21 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Phone, Mail, ArrowRight, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
-
+import {
+  Phone,
+  ArrowRight,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Youtube,
+  
+} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { DOCTORS } from "../../lib/doctors";
 import { DEPARTMENTS } from "../../lib/departments";
 
-// نفس شكل الأيقونة الموحّد (مربع بإطار خفيف ولون أساسي)
+// نفس شكل الأيقونة الموحّد
 function SocialIcon({ href = "#", label, children }) {
   return (
     <a
@@ -58,14 +67,14 @@ export default function DoctorDetails() {
   const dept = DEPARTMENTS.find((d) => d.slug === doc.deptSlug);
   const deptName = dept ? (lng === "ar" ? dept.nameAr : dept.nameEn) : spec;
 
-  // داخل DoctorDetails.jsx قبل الاستخدام
   const degree =
     (lng === "ar" ? doc.degreeAr : doc.degreeEn) ||
     doc.degree ||
     t("profile.degree.default", "M.D. of Medicine");
 
-  const address = doc.address || t("profile.address.default", "Address not provided");
   const bio = lng === "ar" ? (doc.bioAr || doc.bioEn) : (doc.bioEn || doc.bioAr);
+
+  const phoneLink = doc.phone ? normTel(doc.phone) : "";
 
   return (
     <main className="pb-16">
@@ -77,8 +86,8 @@ export default function DoctorDetails() {
 
       {/* المحتوى */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid  gap-6  lg:grid-cols-2">
-          {/* الصورة + الوصف (يسار) */}
+        <div className="grid gap-6 lg:grid-cols-2">
+          {/* الصورة + الوصف */}
           <div className="rounded-2xl overflow-hidden border
                           bg-neutral-50 dark:bg-neutral-900
                           border-neutral-900/10 dark:border-neutral-50/10 grid-cols-2">
@@ -86,7 +95,7 @@ export default function DoctorDetails() {
               <img
                 src={doc.photo || "/assets/doctor-placeholder.jpg"}
                 alt={name}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
                 loading="lazy"
               />
             </div>
@@ -99,7 +108,7 @@ export default function DoctorDetails() {
                   t("profile.bioFallback", "Professional physician providing high-quality care to patients.")}
               </p>
 
-              {/* أيقونات السوشيال بنفس الشكل الموحّد */}
+              {/* أيقونات السوشيال */}
               <div className="mt-5 flex gap-3">
                 <SocialIcon label="Twitter"><Twitter size={18} /></SocialIcon>
                 <SocialIcon label="Facebook"><Facebook size={18} /></SocialIcon>
@@ -110,7 +119,7 @@ export default function DoctorDetails() {
             </div>
           </div>
 
-          {/* التفاصيل (يمين) */}
+          {/* التفاصيل */}
           <aside className="space-y-6 grid-cols-2">
             {/* بطاقة التفاصيل */}
             <div className="rounded-2xl border bg-neutral-50 dark:bg-neutral-900
@@ -126,23 +135,12 @@ export default function DoctorDetails() {
                 <Row label={t("profile.specialty", "Speciality")} value={spec} />
                 <Row label={t("profile.category", "Category")} value={deptName} />
                 <Row label={t("profile.degree", "Degree")} value={degree} />
-                
                 <Row
                   label={t("profile.phone", "Phone")}
                   value={
                     doc.phone ? (
-                      <a href={`tel:${normTel(doc.phone)}`} className="hover:underline" dir="ltr">
+                      <a href={`tel:${phoneLink}`} className="hover:underline" dir="ltr">
                         {doc.phone}
-                      </a>
-                    ) : t("profile.na", "N/A")
-                  }
-                />
-                <Row
-                  label={t("profile.email", "Email")}
-                  value={
-                    doc.email ? (
-                      <a href={`mailto:${doc.email}`} className="hover:underline">
-                        {doc.email}
                       </a>
                     ) : t("profile.na", "N/A")
                   }
@@ -150,35 +148,39 @@ export default function DoctorDetails() {
               </div>
             </div>
 
-            {/* بطاقة الاتصال السريع – أيقونات بنفس أسلوب موحّد */}
+            {/* بطاقة الاتصال السريع */}
             <div className="rounded-2xl border bg-neutral-50 dark:bg-neutral-900
                             border-neutral-900/10 dark:border-neutral-50/10 p-5 space-y-4">
               {doc.phone && (
-                <a
-                  href={`tel:${normTel(doc.phone)}`}
-                  className="flex items-center gap-3 rounded-lg border px-3 py-2
-                             border-neutral-300 hover:bg-primary/10
-                             text-neutral-900 dark:text-neutral-100"
-                >
-                  <span className="grid place-items-center h-10 w-10 rounded-lg border border-neutral-300 text-primary">
-                    <Phone size={18} />
-                  </span>
-                  <span dir="ltr">{doc.phone}</span>
-                </a>
-              )}
+                <>
+                  {/* الاتصال */}
+                  <a
+                    href={`tel:${phoneLink}`}
+                    className="flex items-center gap-3 rounded-lg border px-3 py-2
+                               border-neutral-300 hover:bg-primary/10
+                               text-neutral-900 dark:text-neutral-100 transition"
+                  >
+                    <span className="grid place-items-center h-10 w-10 rounded-lg border border-neutral-300 text-primary">
+                      <Phone size={18} />
+                    </span>
+                    <span dir="ltr">{doc.phone}</span>
+                  </a>
 
-              {doc.email && (
-                <a
-                  href={`mailto:${doc.email}`}
-                  className="flex items-center gap-3 rounded-lg border px-3 py-2
-                             border-neutral-300 hover:bg-primary/10
-                             text-neutral-900 dark:text-neutral-100"
-                >
-                  <span className="grid place-items-center h-10 w-10 rounded-lg border border-neutral-300 text-primary">
-                    <Mail size={18} />
-                  </span>
-                  <span>{doc.email}</span>
-                </a>
+                  {/* واتساب */}
+                  <a
+                    href={`https://wa.me/${phoneLink}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 rounded-lg border px-3 py-2
+                               border-neutral-300 hover:bg-primary/10
+                               text-neutral-900 dark:text-neutral-100 transition"
+                  >
+                    <span className="grid place-items-center h-10 w-10 rounded-lg border border-neutral-300 text-primary">
+                      <FaWhatsapp size={18} />
+                    </span>
+                    <span>{t("profile.whatsapp", "Chat on WhatsApp")}</span>
+                  </a>
+                </>
               )}
             </div>
           </aside>

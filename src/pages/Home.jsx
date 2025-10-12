@@ -31,7 +31,7 @@ export default function Home() {
         ctaText={t("promo.cta")}
       />
       <BrandsCarousel/>
-      <FeatureShowcase />
+      {/* <FeatureShowcase /> */}
       <ServicesCarousel />
       <DoctorsGrid />
       <BookingWidget

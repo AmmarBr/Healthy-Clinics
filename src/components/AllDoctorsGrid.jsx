@@ -5,8 +5,6 @@ import { Phone, Mail } from "lucide-react";
 
 import { DOCTORS } from "../lib/doctors";
 import { DEPARTMENTS } from "../lib/departments";
-import { RiMoneyDollarCircleLine } from "react-icons/ri";
-import reallogo from "../assets/Saudi_Riyal_Symbol.svg.png";
 // تطبيع للبحث بالعربي/إنجليزي
 function norm(s = "") {
   return s

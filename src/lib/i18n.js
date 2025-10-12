@@ -11,6 +11,8 @@ import enDoctors  from "../locales/en/doctors.json";
 import enAbout    from "../locales/en/about.json";
 import enContact  from "../locales/en/contact.json";
 import enBooking  from "../locales/en/booking.json";
+import enNotFound from "../locales/en/notFound.json";
+
 
 /* ===== AR Files ===== */
 import arCommon   from "../locales/ar/common.json";
@@ -20,7 +22,7 @@ import arDoctors  from "../locales/ar/doctors.json";
 import arAbout    from "../locales/ar/about.json";
 import arContact  from "../locales/ar/contact.json";
 import arBooking  from "../locales/ar/booking.json";
-
+import arNotFound from "../locales/ar/notFound.json";
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -34,6 +36,7 @@ i18n
         about:    enAbout,
         contact:  enContact,
         booking:  enBooking,
+        notFound: enNotFound,
       },
       ar: {
         common:   arCommon,
@@ -43,10 +46,11 @@ i18n
         about:    arAbout,
         contact:  arContact,
         booking:  arBooking,
+        notFound: arNotFound,
       },
     },
     fallbackLng: "en",
-    ns: ["common", "services", "clinic", "doctors", "about", "contact", "booking"],
+    ns: ["common", "services", "clinic", "doctors", "about", "contact", "booking","notFound"],
     defaultNS: "common",
     detection: {
       order: ["localStorage", "htmlTag", "navigator"],

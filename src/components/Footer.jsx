@@ -123,7 +123,7 @@ export default function Footer() {
           {/* 3) عيادات (عمودان فقط) */}
           <div className="lg:col-span-4">
             <h3 className="font-semibold text-gray-900 dark:text-white">
-              {t("footer.services", "العيادات")}
+              {t("footer.services2", "العيادات")}
             </h3>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8">
               {clinicColumns.map((col, idx) => (

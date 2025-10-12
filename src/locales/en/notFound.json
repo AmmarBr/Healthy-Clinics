@@ -1,0 +1,9 @@
+{
+  "title": "Page Not Found",
+  "subtitle": "The link you are trying to reach is invalid or has been moved.",
+  "message": "⚡ Don't worry — we'll get you back on track quickly.",
+  "actions": {
+    "home": "Back to Home",
+    "back": "Go Back"
+  }
+}
