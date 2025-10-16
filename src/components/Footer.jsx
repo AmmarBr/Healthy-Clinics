@@ -3,11 +3,14 @@ import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Phone, Mail, MapPin, Clock,
-  Facebook, Instagram, Linkedin, Youtube
+  Facebook, Instagram, Linkedin,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { DEPARTMENTS } from "../lib/departments";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaSnapchat, FaTiktok } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const BrandIcon = ({ as: Icon, size = 16, className = "" }) => (
   <Icon size={size} color="var(--color-primary)" className={`[stroke-width:2] ${className}`} />
@@ -99,9 +102,18 @@ export default function Footer() {
                  className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">
                 <BrandIcon as={Linkedin} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+              
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"
                  className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">
-                <BrandIcon as={Youtube} />
+                <BrandIcon as={FaTiktok} />
+              </a>
+              <a href="https://www.snapchat.com" target="_blank" rel="noopener noreferrer" aria-label="Snapchat"
+                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">
+                <BrandIcon as={FaSnapchat} />
+              </a>
+              <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X"
+                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/15 hover:bg-black/5 dark:hover:bg-white/10">
+                <BrandIcon as={FaXTwitter } />
               </a>
             </div>
           </div>
@@ -164,6 +176,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <BrandIcon as={Clock} />
                 <span>{t("footer.hours", "يومياً 9:00 ص – 10:00 م")}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <BrandIcon as={CgWorkAlt} />
+               <a href="mailto:HR@healthyclinics-sa.com"><span>{t("footer.job", "التوظيف")}</span></a>
               </li>
             </ul>
           </div>

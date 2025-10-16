@@ -1,17 +1,17 @@
-/* 1) الخط */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+/* 1) الخط — محلي من Fontsource */
+@import "@fontsource-variable/cairo/index.css";
 
 /* 2) Tailwind */
 @import "tailwindcss";
 
 /* 3) Variants (سطر واحد بدون أقواس) */
 @custom-variant dark (&:where(.dark, .dark *));
-@custom-variant rtl (&:where([dir="rtl"] *));
+@custom-variant rtl (&:where([dir='rtl'] *));
 
 /* 4) الثيم (CSS-first) */
 @theme {
-  --font-sans: "Cairo", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-               Roboto, "Noto Sans Arabic", "Noto Sans", Arial, sans-serif;
+  --font-sans: "Cairo Variable", "Cairo", ui-sans-serif, system-ui, -apple-system,
+               "Segoe UI", Roboto, "Noto Sans Arabic", "Noto Sans", Arial, sans-serif;
 
   --color-primary: #cda52c;
 
@@ -21,12 +21,20 @@
 
 /* 5) قواعد عامة خفيفة */
 html, body, #root { height: 100%; }
-body { font-family: var(--font-sans); background: var(--color-neutral-50); color: var(--color-neutral-900); }
 
+body {
+  font-family: var(--font-sans);
+  background: var(--color-neutral-50);
+  color: var(--color-neutral-900);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
 /* تخصيص أزرار وبوليت الـ Swiper */
 .swiper-button-next,
-.swiper-button-prev { color: var(--color-primary); }
+.swiper-button-prev {
+  color: var(--color-primary);
+}
 
 /* تأكد إن عناصر السلايدر تحت الـ overlay */
 .swiper, .swiper * { z-index: 0; }
@@ -36,13 +44,13 @@ body { font-family: var(--font-sans); background: var(--color-neutral-50); color
   opacity: 1;
 }
 
-
 /* Light / Dark base using your tokens */
 :root {
   /* لايت */
   --bg: var(--color-neutral-50);
   --fg: var(--color-neutral-900);
 }
+
 .dark {
   /* دارك */
   --bg: var(--color-neutral-900);
@@ -50,8 +58,14 @@ body { font-family: var(--font-sans); background: var(--color-neutral-50); color
 }
 
 /* طبّقهم على الصفحة */
-body { background: var(--bg); color: var(--fg); }
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
 
 /* تحسينات فوكس بسيطة */
 :root { --ring: var(--color-primary); }
-:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}

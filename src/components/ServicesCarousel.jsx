@@ -71,10 +71,11 @@ export default function ServicesCarousel() {
   return (
     <section className="py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
-        
         {/* القائمة الجانبية */}
-        <aside className="lg:col-span-4 order-2 lg:order-1">
-          <div className="rounded-2xl overflow-hidden border border-black/5 dark:border-white/10 bg-white dark:bg-gray-900 shadow-sm">
+        <aside
+          className={`lg:col-span-4 order-2 lg:order-1 `}
+        >
+          <div className={`rounded-2xl overflow-hidden border border-black/20 dark:border-white/30 bg-white dark:bg-gray-900 shadow-sm `}>
             <div className="px-6 py-5 bg-[--color-primary] text-black dark:text-white">
               <h3 className="text-lg font-semibold">{t("services.sidebarTitle", "الأقسام")}</h3>
             </div>

@@ -61,7 +61,7 @@ export default function ClinicDetails() {
       {/* المحتوى */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         {/* وصف */}
-        <div className="prose dark:prose-invert max-w-none leading-relaxed text-lg text-neutral-800 dark:text-neutral-200">
+        <div className="prose dark:prose-invert max-w-none leading-relaxed text-lg text-neutral-800 dark:text-neutral-200 text-center">
           <p>{description}</p>
         </div>
 
@@ -114,7 +114,7 @@ export default function ClinicDetails() {
                       <img
                         src={doc.photo || "/assets/doctor-placeholder.jpg"}
                         alt={name}
-                        className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                        className="h-auto w-full object-cover transition-transform duration-300 hover:scale-105"
                         loading="lazy"
                       />
                     </div>

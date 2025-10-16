@@ -7,7 +7,7 @@ export default function AboutHero({
   title,
   subtitle,
   ctaText,
-  ctaHref = "/departments",
+  ctaHref = "/services",
 }) {
   const { t, i18n } = useTranslation("about"); // ✅ نستخدم about بدل common
   const isAr = i18n.language?.startsWith("ar");
@@ -23,8 +23,8 @@ export default function AboutHero({
       <div className="absolute inset-0 bg-black/50" />
 
       {/* المحتوى */}
-      <div className="relative z-10 mx-auto h-full max-w-7xl flex items-center px-4 sm:px-6 lg:px-8">
-        <div className={`${isAr ? "text-right ml-auto" : "text-left"} max-w-2xl text-white`}>
+      <div className="relative z-10 mx-auto h-full max-w-7xl flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className={`${isAr ? "text-center " : "text-center"} max-w-2xl text-white`}>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             {title ?? t("hero.title", "About our Clinic")}
           </h1>

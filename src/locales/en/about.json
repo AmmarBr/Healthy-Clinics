@@ -46,5 +46,48 @@
         "alt": "Ophthalmology check"
       }
     ]
+  },
+
+ "vision": {
+   "kicker": "Our Vision & Mission",
+    "title": "Delivering exceptional healthcare built on quality and compassion",
+    "heading": "Our Vision",
+    "text": "To be the first choice for visitors of medical complexes in the Northern Riyadh area.",
+    "badgeAlt": "Saudi Vision 2030",
+    "imageAlt": "Clinic building"
+  },
+  "mission": {
+    "heading": "Our Mission",
+    "text": "To empower health and well-being by providing exceptional, patient-centered medical care founded on quality, commitment, and initiative."
+  },
+  "values": {
+    "kicker": "Our Values",
+    "items": [
+      {
+        "title": "Excellence",
+        "text": "We dedicate ourselves to continuous improvement, professionalism, creativity, and excellence in all that we do."
+      },
+      {
+        "title": "Compassion",
+        "text": "We provide the best medical care and treatment for our patients and their families with empathy and understanding."
+      },
+      {
+        "title": "Transparency",
+        "text": "We uphold respect, openness, and honesty with our patients and their families during and after treatment."
+      },
+      {
+        "title": "Safety",
+        "text": "We believe that maintaining the highest standards of safety is fundamental to delivering high-quality healthcare."
+      },
+      {
+        "title": "Care",
+        "text": "In our care, we touch the lives of patients and their families with kindness, compassion, and a deep understanding of their diverse needs."
+      }
+    ]
+  },
+  "badges": {
+    "quality": "Certified Quality",
+    "patientFirst": "Patient First",
+    "innovation": "Innovation"
   }
 }

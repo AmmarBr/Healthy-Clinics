@@ -12,7 +12,6 @@ export default function Highlights() {
     () => [
       { label: t("highlights.emergency", "طوارئ"), time: "24 ساعة" },
       { label: t("highlights.clinics", "العيادات من السبت إلى الخميس"), time: "1:30 – 9:30" },
-      { label: t("highlights.friday", "الجمعة"), time: t("highlights.off", "راحة") },
     ],
     [i18n.language]
   );
@@ -29,56 +28,12 @@ export default function Highlights() {
 
   return (
     <section className="py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-1 gap-4 ">
         {/* 1) أفضل الأطباء */}
-        <div className={`${cardBase} ${bgA}`}>
-          <div className="absolute inset-0 bg-black/10" />
-          <div className="relative">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 border border-white/20">
-                <Stethoscope size={20} color="white" />
-              </span>
-              <h3 className="text-xl font-semibold">{t("highlights.topDoctors", "أفضل الأطباء")}</h3>
-            </div>
-            <p className="text-white/90 leading-relaxed mb-6">
-              {t(
-                "highlights.topDoctorsTxt",
-                "نخبة من الأطباء المتخصصين لضمان رعاية طبية عالية الجودة."
-              )}
-            </p>
-            <a
-              href="/doctors"
-              className="inline-block px-5 py-2.5 rounded-xl border border-white/70 hover:bg-white/10 transition"
-            >
-              {t("highlights.readMore", "اقرأ المزيد")}
-            </a>
-          </div>
-        </div>
+       
 
         {/* 2) خدمة 24 ساعة */}
-        <div className={`${cardBase} ${bgB}`}>
-          <div className="absolute inset-0 bg-black/10" />
-          <div className="relative">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 border border-white/20">
-                <Clock size={20} color="white" />
-              </span>
-              <h3 className="text-xl font-semibold">{t("highlights.service24", "خدمة 24 ساعة")}</h3>
-            </div>
-            <p className="text-white/90 leading-relaxed mb-6">
-              {t(
-                "highlights.service24Txt",
-                "نقدم خدمات طبية طارئة على مدار الساعة لضمان سلامتك."
-              )}
-            </p>
-            <a
-              href="/contact"
-              className="inline-block px-5 py-2.5 rounded-xl border border-white/70 hover:bg-white/10 transition"
-            >
-              {t("highlights.readMore", "اقرأ المزيد")}
-            </a>
-          </div>
-        </div>
+       
 
         {/* 3) ساعات العمل */}
         <div className={`${cardBase} ${bgC} ${isAr ? "text-right" : "text-left"}`}>

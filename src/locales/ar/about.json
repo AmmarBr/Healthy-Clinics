@@ -1,18 +1,18 @@
 {
-  "hero": {
-    "title": "About our Clinic",
-    "subtitle": "We deliver high-quality medical care with a professional team of doctors and specialists. Our clinic is equipped with the latest technology to ensure the best outcomes.",
-    "cta": "View All Departments",
-    "alt": "Clinic team at work"
-  },
-  "welcome": {
-    "kicker": "Professionals",
-    "title": "Welcome to Medical Clinic",
-    "alt": "Medical Clinic building",
-    "who": {
-      "title": "Who we are?",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum massa vel enim feugiat gravida. Phasellus velit risus, euismod a lacus et, mattis condimentum augue."
-    }
+ "hero": {
+  "title": "عن عيادتنا",
+  "subtitle": "نقدّم رعاية طبية عالية الجودة مع فريق محترف من الأطباء والمتخصصين. عيادتنا مجهّزة بأحدث التقنيات لضمان أفضل النتائج.",
+  "cta": "عرض جميع الأقسام",
+  "alt": "فريق العيادة أثناء العمل"
+},
+"welcome": {
+  "kicker": "المتخصصون",
+  "title": "مرحبًا بكم في عيادات هيلثي",
+  "alt": "مبنى العيادة الطبية",
+  "who": {
+    "title": "من نحن؟",
+    "text": "نحن فريق طبي ملتزم بتقديم خدمات صحية متميزة تلبي احتياجات جميع أفراد المجتمع، من خلال بيئة آمنة وتقنيات حديثة ومعايير جودة عالمية."
+  }
 },
  "faq": {
     "kicker": "الأسئلة الشائعة",
@@ -46,5 +46,32 @@
         "alt": "فحص العيون"
       }
     ]
+  },
+   "vision": {
+    "kicker": "رؤيتنا ورسالتنا",
+    "title": "نُقدّم رعاية طبية استثنائية ترتكز على الجودة والإنسان",
+    "heading": "رؤيتنا",
+    "text": "أن نكون الخيار الأول لمراجعي المجمعات الطبية في منطقة شمال الرياض.",
+    "badgeAlt": "رؤية السعودية 2030"
+  },
+  "mission": {
+    "heading": "رسالتنا",
+    "text": "تمكين الصحة والعافية من خلال تقديم رعاية طبية استثنائية تركز على المريض، قوامها الجودة والالتزام والمبادرة."
+  },
+  "values": {
+    "kicker": "قيمنا",
+    "items": [
+      { "title": "التفوق", "text": "سنعمل على تكريس أنفسنا دائمًا وأبدًا للتحسين المستمر والتميز والمهنية والإبداع في عملنا." },
+      { "title": "التعاطف", "text": "تقديم أفضل رعاية طبية وعلاج لمرضانا وأسرهم من خلال الإحساس بهم والتعاطف معهم." },
+      { "title": "الشفافية", "text": "تحقيق الاحترام والانفتاح والصدق مع مرضانا وأسرهم خلال فترة العلاج وما بعدها." },
+      { "title": "السلامة", "text": "نحن مؤمنون بأن الحفاظ على أعلى معايير السلامة أمر أساسي لتقديم رعاية عالية الجودة والمستوى." },
+      { "title": "الرعاية", "text": "في رعايتنا نلامس حياة المرضى وأسرهم من خلال التعامل بلطف وتعاطف والسعي لفهم احتياجاتهم المتنوعة والاستجابة لهم بأفضل شكل ممكن." }
+    ]
+  },
+  "badges": {
+    "quality": "جودة معتمدة",
+    "patientFirst": "المريض أولاً",
+    "innovation": "ابتكار"
   }
+  
 }

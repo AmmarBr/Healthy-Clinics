@@ -27,7 +27,7 @@ export default function TestimonialsOverlay() {
   // ✅ pagination refs منفصلة لكل صف
   const pag1Ref = useRef(null);
   const pag2Ref = useRef(null);
-
+  const perViewMax = 3;
   return (
     <section className="relative py-20 sm:py-28">
       {/* الخلفية */}
@@ -61,7 +61,7 @@ export default function TestimonialsOverlay() {
             }}
             autoplay={{ delay: 3600, disableOnInteraction: false, pauseOnMouseEnter: true }}
             speed={600}
-            loop
+            loop={items.length > perViewMax}
             pagination={{ clickable: true, type: "bullets" }}
             spaceBetween={24}
             breakpoints={{
@@ -92,7 +92,7 @@ export default function TestimonialsOverlay() {
             autoplay={{ delay: 4800, disableOnInteraction: false, pauseOnMouseEnter: true }}
             speed={850}
             freeMode={{ enabled: true, momentum: true }}
-            loop
+            loop={items.length > perViewMax}
             pagination={{ clickable: true, type: "progressbar" }}
             spaceBetween={20}
             breakpoints={{
@@ -136,17 +136,15 @@ function TestimonialCard({ it, isAr, variant = "solid" }) {
         </div>
 
         <p
-          className={`mt-3 text-gray-800 dark:text-gray-100 leading-7 flex-1 ${
-            isAr ? "text-right" : "text-left"
-          }`}
+          className={`mt-3 text-gray-800 dark:text-gray-100 leading-7 flex-1 ${isAr ? "text-right" : "text-left"
+            }`}
         >
           {it.text}
         </p>
 
         <div
-          className={`mt-5 pt-4 border-t border-black/10 dark:border-white/10 ${
-            isAr ? "text-right" : "text-left"
-          }`}
+          className={`mt-5 pt-4 border-t border-black/10 dark:border-white/10 ${isAr ? "text-right" : "text-left"
+            }`}
         >
           <div className="font-semibold text-gray-900 dark:text-white">{it.name}</div>
           <div className="text-sm text-gray-500">{it.role}</div>

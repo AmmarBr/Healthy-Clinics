@@ -142,7 +142,7 @@ export default function Navbar({ theme: themeProp, setTheme: setThemeProp }) {
 
       {/* Mobile Drawer */}
       {open && (
-        <div className="md:hidden fixed inset-0 z-50">
+        <div className="md:hidden fixed inset-0 z-50 bg-white dark:bg-gray-900 ">
           <div className="absolute inset-0 bg-black/30" onClick={() => setOpen(false)} />
           <div className="absolute right-0 top-0 h-full w-80 bg-white dark:bg-gray-900 shadow-xl" role="dialog" aria-modal="true">
             <div className="h-16 flex items-center justify-between px-4 border-b border-black/5 dark:border-white/10">
@@ -156,7 +156,7 @@ export default function Navbar({ theme: themeProp, setTheme: setThemeProp }) {
               </button>
             </div>
 
-            <nav className="p-2 flex flex-col">
+            <nav className="p-2 flex flex-col bg-white dark:bg-gray-900 ">
               {navItems.map((i) => (
                 <NavLink
                   key={i.to}

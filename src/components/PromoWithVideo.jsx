@@ -60,7 +60,7 @@ export default function PromoWithVideo({
             <p className="text-xs sm:text-sm text-black/70 dark:text-white/80 md:text-white/80">
               {welcome}
             </p>
-            <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold leading-snug md:text-white">
+            <h2 className="mt-2 text-xl sm:text-2xl font-extrabold leading-snug md:text-white">
               {headline}
             </h2>
             <p className="mt-1 text-[--color-primary] font-semibold">{subTitle}</p>
