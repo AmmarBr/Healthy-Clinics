@@ -1,26 +1,26 @@
-// import imgladies_clob from '../assets/نادي نسائي.jpg';
-// import imginternal from '../assets/علاج طبيعي.jpg';
-// import imgeye from '../assets/عيون.jpg';
-// import imgGeneral from '../assets/علاج طبيعي.jpg';
-// import imgPharmacy from '../assets/الصيدلية.jpg';
-// import imgLaboratory from '../assets/المختبر.jpg';
-// import imgDialysis from '../assets/غسيل الكلى.jpg';
-// import imgEmergency from '../assets/علاج طبيعي.jpg';
-// import imgOrthopedics from '../assets/عظام.jpg';
-// import imgDentistry from '../assets/أسنان.jpg';
-// import imgObstetrics from '../assets/نساء.jpg';
-// import imgPediatrics from '../assets/اطفال.jpg';
-// import imgRadiology from '../assets/اشعة.jpg';
-// import imgDermatology from '../assets/جلدية.jpg';
-// import imgENT from '../assets/انف و اذن.jpg';
-// import imgPhysiotherapy from '../assets/علاج طبيعي.jpg';
-// import imgskincare from '../assets/علاج طبيعي.jpg';
+import img1 from "../assets/طؤاري0.jpeg";
+import img2 from "../assets/طب عام00.jpeg";
+import img3 from "../assets/اسنان0.jpeg";
+import img4 from "../assets/الجلدية0.jpeg";
+import img5 from "../assets/العناية بالبشرة0.jpeg";
+import img6 from "../assets/نسا و ولادة0.jpeg";
+import img7 from "../assets/الباطنية00.jpeg";
+import img8 from "../assets/العيون0.jpeg";
+import img9 from "../assets/0العظام.jpeg";
+import img10 from "../assets/علاج طبيعي00.jpeg";
+import img11 from "../assets/الانف و الاذن.jpeg";
+import img12 from "../assets/الاطفال00.jpeg";
+import img13 from "../assets/المختبر00.jpeg";
+import img14 from "../assets/الاشعة00.jpeg";
+import img15 from "../assets/التعقيم المركزي0.jpeg";
+import img16 from "../assets/غسيل كلى0.jpeg";
+import img17 from "../assets/علاج طبيعي0.jpeg";
 export const DEPARTMENTS = [
   {
     slug: "general-er",
     nameAr: "الطب العام والطوارئ",
     nameEn: "General Medicine & Emergency",
-    cover: "/assets/departments/general-er.jpg",
+    cover: img1,
     descriptionAr:
       "في عيادات هيلثي نؤمن أن البداية الصحيّة تبدأ من العناية الأولية الدقيقة، ولهذا تم تجهيز قسم الطب العام والطوارئ ليكون خط الدفاع الأول لصحتك.يضم القسم فريقًا طبيًا مؤهلًا على أعلى مستوى، قادرًا على التعامل مع الحالات الطارئة بدقة وسرعة، وتشخيص الأمراض المختلفة في مراحلها المبكرة لتجنّب أي مضاعفات مستقبلية.من الفحوصات الدورية إلى التعامل مع الحالات المفاجئة – نحن هنا على مدار الساعة لنمنحك الطمأنينة والرعاية الفورية التي تستحقها، بأحدث الأجهزة ومعايير السلامة المعتمدة.",
     descriptionEn:
@@ -32,7 +32,7 @@ export const DEPARTMENTS = [
     slug: "pediatric-er",
     nameAr: "طوارئ الأطفال",
     nameEn: "Pediatric Emergency",
-    cover: "/assets/departments/pediatric-er.jpg",
+    cover: img2,
     descriptionAr:
       "لأن الطوارئ لا تنتظر، خصصنا في هيلثي قسمًا متكاملاً لطوارئ الأطفال مجهّزًا لاستقبال الحالات الطارئة في أي وقت.نوفّر سرعة الاستجابة والرعاية الدقيقة بإشراف أطباء مختصين بطب الأطفال، للتعامل مع حالات الحمى، التحسس، النزلات الصدرية، أو الإصابات الطفيفة.نهدف أن نكون أول من يطمئنك في لحظة القلق، لنحوّل الموقف الطارئ إلى تجربة آمنة وسريعة الاستجابة",
     descriptionEn:
@@ -44,7 +44,7 @@ export const DEPARTMENTS = [
     slug: "dental",
     nameAr: "الأسنان",
     nameEn: "Dental Department",
-    cover: "/assets/departments/dental.jpg",
+    cover: img3,
     descriptionAr:
       "ابتسامتك هي عنوان جمالك وثقتك، وفي قسم الأسنان نحرص على أن تظلّ مشرقة دومًا. نقدّم رعاية متكاملة تبدأ من تنظيف الأسنان الوقائي، مرورًا بعلاجات العصب والحشوات التجميلية، وصولًا إلى ابتسامة هوليوود المصمّمة بدقة لتناسب ملامحك.نستخدم أحدث التقنيات والأجهزة لضمان علاج آمن ونتائج مثالية، على يد نخبة من الأخصائيين والاستشاريين ذوي الخبرة العالية في طب وجراحة الفم والأسنان.",
     descriptionEn:
@@ -56,7 +56,7 @@ export const DEPARTMENTS = [
     slug: "dermatology-cosmetic",
     nameAr: "الجلدية والتجميل",
     nameEn: "Dermatology & Cosmetology",
-    cover: "/assets/departments/dermatology.jpg",
+    cover: img4,
     descriptionAr:
       "لأن الجمال جزء من العافية، صُمم قسم الجلدية والتجميل ليجمع بين الخبرة الطبية واللمسة الجمالية الراقية.نقدّم حلولًا متكاملة لعلاج مشكلات البشرة والشعر والجلد باستخدام أحدث الأجهزة الطبية والليزر، بالإضافة إلى خدمات التجميل الحديثة مثل الفيلر، البوتوكس، التقشير، وإزالة التصبغات والتاتو.كل جلسة لدينا تُنفّذ في بيئة آمنة وخاصة، مع مراعاة أعلى معايير الخصوصية لتمنحك نتائج طبيعية وجاذبية تدوم.",
     descriptionEn:
@@ -68,7 +68,7 @@ export const DEPARTMENTS = [
     slug: "skincare",
     nameAr: "العناية بالبشرة",
     nameEn: "Skincare",
-    cover: "/assets/departments/skincare.jpg",
+    cover: img5,
     descriptionAr:
       "البشرة مرآة صحتك وجمالك، وفي هيلثي نمنحها الاهتمام الذي تستحقه.يقدّم قسم العناية بالبشرة جلسات متخصّصة لتنظيف البشرة العميق، والترطيب، والتقشير، وتجديد النضارة، باستخدام منتجات طبية آمنة وتقنيات حديثة.هدفنا أن تشعّ بشرتك بالحيوية، وأن تشعري بالثقة كل يوم من خلال لمسة ناعمة ورعاية مدروسة.",
     descriptionEn:
@@ -80,7 +80,7 @@ export const DEPARTMENTS = [
     slug: "obgyn",
     nameAr: "النساء والولادة",
     nameEn: "Obstetrics & Gynecology",
-    cover: "/assets/departments/obgyn.jpg",
+    cover: img6,
     descriptionAr:
       "لأن صحة المرأة تستحق العناية بكل تفاصيلها، يقدّم قسم النساء والولادة في هيلثي رعاية متكاملة للمرأة في جميع مراحل حياتها.من متابعة الحمل والولادة، إلى تشخيص العقم، مرورًا بعلاج الاضطرابات النسائية والفحوصات الوقائية المبكرة.يعمل الفريق الطبي بخبرة عالية وحسّ إنساني راقٍ لتشعري دائمًا بالأمان، فهنا تبدأ رحلتك مع العافية الأنثوية بأدق تفاصيلها.",
     descriptionEn:
@@ -92,7 +92,7 @@ export const DEPARTMENTS = [
     slug: "internal-med",
     nameAr: "الباطنية",
     nameEn: "Internal Medicine",
-    cover: "/assets/departments/internal-med.jpg",
+    cover: img7,
     descriptionAr:
       "قسم الباطنية في عيادات هيلثي هو وجهتك لتشخيص وعلاج الأمراض المزمنة بدقة واهتمام.نوفّر رعاية متكاملة لأمراض الضغط، السكري، الكوليسترول، الجهاز الهضمي، الكبد والغدة الدرقية، بإشراف نخبة من الأطباء المتخصصين.هنا لا نكتفي بالعلاج فقط، بل نحرص على المتابعة المستمرة والتوعية لتعيش حياة صحية متوازنة بعيدة عن المضاعفات.",
     descriptionEn:
@@ -104,7 +104,7 @@ export const DEPARTMENTS = [
     slug: "ophthalmology",
     nameAr: "العيون",
     nameEn: "Ophthalmic Unit",
-    cover: "/assets/departments/ophthalmology.jpg",
+    cover: img8,
     descriptionAr:
       "البصر نعمة لا تُقدّر بثمن، ولهذا أنشأنا قسم العيون ليكون مرجعًا للرؤية الواضحة والفحص الدقيق.نوفّر فحوصات النظر، ضغط العين، الشبكية، والمقاسات الدقيقة للنظارات والعدسات، باستخدام أحدث الأجهزة البصرية.في هيلثي، نعتني بعينيك لنحافظ على نظرك حادًا وعلى راحتك في كل تفصيلة من تجربتك.",
     descriptionEn:
@@ -116,7 +116,7 @@ export const DEPARTMENTS = [
     slug: "orthopedics",
     nameAr: "العظام والعمود الفقري",
     nameEn: "Orthopedics & Spine",
-    cover: "/assets/departments/orthopedics.jpg",
+    cover: img9,
     descriptionAr:
       "عندما تتعلق المسألة بحركتك اليومية وجودة حياتك، يأتي دور قسم العظام والعمود الفقري في هيلثي. نقدّم خدمات متكاملة لعلاج الكسور، الالتهابات، هشاشة العظام، آلام المفاصل والعمود الفقري، باستخدام أحدث وسائل التشخيص والعلاج مع فريق طبي مختص وتجهيزات دقيقة، نعمل على إعادة الحركة والانسيابية لحياتك بأمان وفعالية.",
     descriptionEn:
@@ -128,7 +128,7 @@ export const DEPARTMENTS = [
     slug: "physiotherapy",
     nameAr: "العلاج الطبيعي والتأهيل",
     nameEn: "Rehabilitation & Physiotherapy",
-    cover: "/assets/departments/physiotherapy.jpg",
+    cover: img10,
     descriptionAr:
       "العافية الحقيقية تبدأ من الحركة. يقدّم قسم العلاج الطبيعي والتأهيل برامج متخصّصة للتعافي بعد الإصابات والعمليات، وعلاج الآلام المزمنة، وتحسين اللياقة الوظيفية للجسم. تتم الجلسات تحت إشراف أخصائيين بخبرة واسعة، باستخدام أجهزة علاجية متطورة وتقنيات حديثة، لمساعدتك على استعادة نشاطك وقوتك بثقة.",
     descriptionEn:
@@ -140,7 +140,7 @@ export const DEPARTMENTS = [
     slug: "ent",
     nameAr: "الأنف والأذن والحنجرة",
     nameEn: "ENT",
-    cover: "/assets/departments/ent.jpg",
+    cover: img11,
     descriptionAr:
       "في عيادات هيلثي، يقدّم قسم الأنف والأذن والحنجرة خدمات متكاملة لعلاج أمراض الرأس والرقبة. يشمل القسم تشخيص وعلاج التهابات الأنف والجيوب الأنفية، مشاكل السمع، طنين الأذن، التهابات اللوزتين، واضطرابات الصوت والبلع. كما يتميز القسم باستخدام أحدث التقنيات في تنظيف الأذن، والمناظير الدقيقة لفحص الأنف والحنجرة، لضمان تشخيص دقيق وعلاج فعّال وسريع.",
     descriptionEn:
@@ -152,7 +152,7 @@ export const DEPARTMENTS = [
     slug: "pediatrics",
     nameAr: "الأطفال",
     nameEn: "Pediatrics",
-    cover: "/assets/departments/pediatrics.jpg",
+    cover: img12,
     descriptionAr:
       "في هيلثي، صحة أطفالكم أمانة نعتز بها. قسم الأطفال لدينا يهتم بكل ما يحتاجه صغيرك من متابعة النمو والتغذية، والتطعيمات الدورية، إلى علاج الأمراض الحادة والمزمنة. بيئة القسم مصمّمة لتكون مريحة وآمنة للطفل وهادئة للأسرة، ويشرف عليه أطباء بخبرة واسعة في التعامل مع الأطفال منذ الولادة وحتى سن المراهقة، لنضمن له رعاية مليئة بالحنان والاهتمام ",
     descriptionEn:
@@ -164,7 +164,7 @@ export const DEPARTMENTS = [
     slug: "lab",
     nameAr: "المختبر المركزي",
     nameEn: "Central Laboratory",
-    cover: "/assets/departments/lab.jpg",
+    cover: img13,
     descriptionAr:
       "لأن التشخيص الدقيق هو بداية العلاج الصحيح، حرصنا على تجهيز قسم المختبر في عيادات هيلثي بأحدث الأجهزة والتقنيات المخبرية الحديثة. نُجري جميع أنواع التحاليل الطبية: تحليل الدم، الهرمونات، الكبد، الكلى، التحاليل المناعية، وفحوصات الشركات والعمالة. يُشرف على المختبر فريق متخصص يضمن دقة النتائج وسرعة تسليمها وفق أعلى معايير الجودة والسلامة ",
     descriptionEn:
@@ -176,7 +176,7 @@ export const DEPARTMENTS = [
     slug: "radiology",
     nameAr: "الأشعة",
     nameEn: "Radiology",
-    cover: "/assets/departments/radiology.jpg",
+    cover: img14,
     descriptionAr:
       "يضم قسم الأشعة في عيادات هيلثي أحدث الأجهزة الرقمية لتقديم صور دقيقة تسهم في التشخيص المبكر والعلاج الفعّال. يشمل القسم خدمات الأشعة العادية، أشعة الأسنان البانورامية، الأشعة فوق الصوتية (السونار) للحوامل والأعضاء الداخلية، والأشعة الرباعية الأبعاد. جميع الفحوصات تُجرى تحت إشراف استشاريين وفنيين مختصين لضمان جودة الصورة وسلامة المريض.",
     descriptionEn:
@@ -188,7 +188,7 @@ export const DEPARTMENTS = [
     slug: "cssd",
     nameAr: "التعقيم المركزي",
     nameEn: "Central Sterilization",
-    cover: "/assets/departments/cssd.jpg",
+    cover: img15,
     descriptionAr:
       "السلامة أساس الجودة، ولهذا خصّصت عيادات هيلثي قسمًا مستقلًا للتعقيم المركزي لتأمين أعلى درجات الأمان لجميع الأقسام.يتم استخدام أحدث أجهزة التعقيم بالبخار والحرارة لضمان سلامة الأدوات والمعدات الطبية، مع متابعة دقيقة من قسم مكافحة العدوى.كل خطوة تتم وفق بروتوكولات معتمدة لضمان بيئة صحية خالية من المخاطر.",
     descriptionEn:
@@ -200,7 +200,7 @@ export const DEPARTMENTS = [
     slug: "dialysis",
     nameAr: "غسيل الكلى",
     nameEn: "Dialysis Unit",
-    cover: "/assets/departments/dialysis.jpg",
+    cover: img16,
     descriptionAr:
       "تم تجهيز قسم غسيل الكلى بأحدث الأجهزة المتطورة، مع تطبيق أعلى معايير مكافحة العدوى والسلامة.يقدّم القسم جلسات غسيل دموي يومية بإشراف أطباء مختصين، مع متابعة دقيقة لحالة المريض قبل وأثناء وبعد الجلسة.كما يوفّر القسم بيئة مريحة وآمنة تضمن راحة المريض وخصوصيته أثناء تلقي الخدمة",
     descriptionEn:
@@ -212,7 +212,7 @@ export const DEPARTMENTS = [
     slug: "women_club",
     nameAr: "النادي النسائي",
     nameEn: "Women's Club",
-    cover: "/assets/departments/women_club.jpg",
+    cover: img17,
     descriptionAr:
       "العافية تبدأ من التوازن بين الصحة الجسدية والنفسية، ولهذا صمّمنا في هيلثي ناديًا نسائيًا راقيًا يوفّر تجربة استثنائية للمرأة. يضم النادي أجهزة رياضية حديثة، برامج تدريب متنوعة، وجلسات لياقة بإشراف مدربات متخصصات. بيئة آمنة ومريحة تجمع بين الخصوصية والرفاهية، لتكوني في أفضل حالتك كل يوم ",
     descriptionEn:

@@ -103,35 +103,32 @@
   "title": "Answers to Common Inquiries",
   "items": [
     { 
-      "q": "Do you offer stitch removal?", 
-      "a": "Yes, available in the Emergency Department 24 hours a day without an appointment." 
+      "q": "Are there labor tests?", 
+      "a": "Yes, residency, municipality, and traffic license tests." 
     },
     { 
-      "q": "Do you offer ear piercing?", 
-      "a": "Yes, piercing with a medical gun is available daily in the Emergency Department without an appointment. 70 SAR with our medical earring / 50 SAR if you bring your own." 
+      "q": "Are there dental implants?", 
+      "a": "Yes, dental implants are available with a selection of the best doctors." 
     },
     { 
-      "q": "How much does an X-ray cost?", 
-      "a": "It depends on the area to be examined. (When the area is determined, please ask the Radiology Department for the price)." 
+      "q": "Is there a physical therapy department?", 
+      "a": "Yes, there is a separate section for men and a separate section for women." 
+    },
+    {
+      "q": "Do you have any offers?",
+"a": "Yes, available through the online store: <link>{{label}}</link>"
     },
     { 
-      "q": "What is the price of the comprehensive lab test?", 
-      "a": "We offer the 'Your Health' and 'Your Health Plus' packages for 999 SAR." 
+      "q": "What laser devices are available at the complex?", 
+      "a": "Gentle Pro Max – Duetto." 
     },
     { 
-      "q": "What is the price for intramuscular injection?", 
-      "a": "Available in the Emergency Department 24 hours a day without an appointment. The price is 10 SAR." 
-    },
-    { 
-      "q": "What is the price for iron injection?", 
-      "a": "It depends on the prescription — whether it is an iron ampoule or Eprex (Epoetin)." 
-    },
-    { 
-      "q": "What is the price for nebulizer therapy?", 
-      "a": "It depends on the prescription. A medical prescription is required. The nebulizer starts from 70 SAR / If there is no prescription, a 50 SAR consultation with the general practitioner is required." 
+      "q": "What are the approved insurance companies?", 
+      "a": "Malath - GlobeMed - Al Rajhi Takaful - Al Tawuniya - MedGulf - Next Care." 
     }
   ]
 }
+
 ,
 
   "footer": {

@@ -36,7 +36,7 @@ export default function Home() {
       <DoctorsGrid />
       <BookingWidget
         clinicWhatsApp="+201028526504"
-        clinicEmail="ammarbrakat731@gmail.com"
+        clinicEmail="ammar@example.com"
       />
       
       <NewsSection />

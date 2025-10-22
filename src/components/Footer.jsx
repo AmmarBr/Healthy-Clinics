@@ -160,13 +160,13 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-900 dark:text-white">
               {t("footer.contact", "تواصل معنا")}
             </h3>
-            <ul className={`mt-4 space-y-4 text-gray-700 dark:text-gray-300 ${isAr ? "text-right" : "text-left"}`}>
-              <li className="flex items-start gap-3">
-                <BrandIcon as={MapPin} className="mt-1" />
+            <ul className={`mt-4 space-y-4  text-gray-700 dark:text-gray-300 ${isAr ? "text-right" : "text-left"}`}>
+              <li className="flex  items-start gap-3">
+                <BrandIcon as={MapPin} className="mt-1 w-7" />
                 <span>{address}</span>
               </li>
               <li className="flex items-center gap-3">
-                <BrandIcon as={Phone} />
+                <BrandIcon as={Phone}  />
                 <a href={`tel:${normTel(phone)}`} className="hover:text-[--color-primary]">{phone}</a>
               </li>
               <li className="flex items-center gap-3">
@@ -174,7 +174,7 @@ export default function Footer() {
                 <a href={`mailto:${email}`} className="hover:text-[--color-primary]">{email}</a>
               </li>
               <li className="flex items-center gap-3">
-                <BrandIcon as={Clock} />
+                <BrandIcon as={Clock} className=" w-7" />
                 <span>{t("footer.hours", "يومياً 9:00 ص – 10:00 م")}</span>
               </li>
               <li className="flex items-center gap-3">

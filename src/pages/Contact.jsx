@@ -40,13 +40,6 @@ export default function Contact() {
           <div className="space-y-6">
             <ContactForm />
 
-            {/* اختياري: ويدجت الحجز */}
-            {/*
-            <BookingWidget
-              clinicWhatsApp="+966118342222"
-              clinicEmail="info@healthyclinics-sa.com"
-            />
-            */}
           </div>
 
           {/* كارت المعلومات + الخريطة */}
@@ -112,7 +105,10 @@ export default function Contact() {
             </div>
           </aside>
         </div>
-                  <BookingWidget/>
+                  <BookingWidget
+                    clinicWhatsApp="+966118342222"
+                    clinicEmail="info@healthyclinics-sa.com"
+                  />
 
       </section>
     </main>

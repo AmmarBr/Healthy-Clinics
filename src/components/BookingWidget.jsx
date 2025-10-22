@@ -1,10 +1,13 @@
-import React, { useMemo, useState, useEffect, useRef } from "react";
+// src/components/BookingSection.jsx
+import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import bookingImg from "../assets/imd55.jpg";
 import { DEPARTMENTS } from "../lib/departments";
 import { DOCTORS } from "../lib/doctors";
 
+// 🔹 دالة لتنسيق رقم الهاتف (لروابط واتساب وإيميل)
 const normTel = (v = "") => v.trim().replace(/^00/, "+").replace(/[^\d+]/g, "");
+const normTelDigits = (v = "") => v.replace(/\D/g, ""); // أرقام فقط لواتساب
 
 export default function BookingSection({
   clinicWhatsApp = "+966118342222",
@@ -12,6 +15,7 @@ export default function BookingSection({
 }) {
   const { t, i18n } = useTranslation("booking");
   const isAr = i18n.language?.startsWith("ar");
+
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -21,24 +25,28 @@ export default function BookingSection({
   const [error, setError] = useState("");
   const [sent, setSent] = useState(false);
 
-  const deptOptions = useMemo(() => (DEPARTMENTS || []), []);
+  // 🔹 الأقسام والأطباء
+  const deptOptions = useMemo(() => DEPARTMENTS || [], []);
   const doctorOptions = useMemo(() => {
     if (!form.dept) return DOCTORS;
     return DOCTORS.filter((d) => d.deptSlug === form.dept);
   }, [form.dept]);
 
+  // 🔹 تحديث البيانات
   const onChange = (e) => {
     const { name, value } = e.target;
     setForm((s) => ({ ...s, [name]: value }));
     if (name === "dept") setForm((s) => ({ ...s, doctor: "" }));
   };
 
+  // 🔹 التحقق من الحقول المطلوبة
   const validate = () => {
     if (!form.name || !form.phone || !form.dept)
       return t("errors.required", "Please fill all required fields.");
     return "";
   };
 
+  // 🔹 عند الإرسال
   const onSubmit = (e) => {
     e.preventDefault();
     setError("");
@@ -64,18 +72,22 @@ export default function BookingSection({
         : doctorObj.nameEn
       : t("anyDoctor", "Any available doctor");
 
+    // 🔹 نص الرسالة
     const msgLines = [
-      t("msg.header", "New appointment request"),
+      t("msg.header", "طلب حجز جديد / New Appointment Request"),
       "-------------------------------",
-      `${t("msg.name", "Name")}: ${form.name}`,
-      `${t("msg.phone", "Phone")}: ${form.phone}`,
-      `${t("msg.dept", "Department")}: ${deptName}`,
-      `${t("msg.doctor", "Doctor")}: ${doctorName}`,
+      `${t("msg.name", "الاسم / Name")}: ${form.name}`,
+      `${t("msg.phone", "الهاتف / Phone")}: ${form.phone}`,
+      `${t("msg.dept", "القسم / Department")}: ${deptName}`,
+      `${t("msg.doctor", "الطبيب / Doctor")}: ${doctorName}`,
     ].join("\n");
 
-    const wa = `https://wa.me/${normTel(
+    // 🔹 رابط واتساب (بترميز كامل)
+    const wa = `https://api.whatsapp.com/send?phone=${normTelDigits(
       clinicWhatsApp
-    )}?text=${encodeURIComponent(msgLines)}`;
+    )}&text=${encodeURIComponent(msgLines)}`;
+
+    // 🔹 إعداد الإيميل
     const subject = `${t("mail.subject", "Appointment")} - ${form.name}`;
     const body =
       msgLines + "\n\n" + t("mail.footer", "Sent from Healthy Clinics website.");
@@ -83,8 +95,12 @@ export default function BookingSection({
       subject
     )}&body=${encodeURIComponent(body)}`;
 
+    // 🔹 فتح واتساب أولًا ثم الإيميل بعد تأخير بسيط
     window.open(wa, "_blank", "noopener,noreferrer");
-    window.location.href = mailto;
+    setTimeout(() => {
+      window.location.href = mailto;
+    }, 800);
+
     setSent(true);
   };
 
@@ -95,7 +111,7 @@ export default function BookingSection({
           isAr ? "lg:flex-row-reverse" : ""
         }`}
       >
-        {/* ✅ الصورة (الآن بنفس ارتفاع النموذج) */}
+        {/* 🖼️ الصورة */}
         <div className="relative flex items-stretch">
           <div className="overflow-hidden rounded-3xl shadow-2xl w-full h-full flex">
             <img
@@ -108,7 +124,7 @@ export default function BookingSection({
           </div>
         </div>
 
-        {/* ✅ نموذج الحجز */}
+        {/* 📝 نموذج الحجز */}
         <div className="relative z-10 flex items-stretch">
           <div className="flex flex-col justify-center w-full rounded-3xl border bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md shadow-2xl border-black/10 dark:border-white/10 p-8 sm:p-10">
             <div className={`${isAr ? "text-right" : "text-left"} mb-6`}>
@@ -124,6 +140,7 @@ export default function BookingSection({
             </div>
 
             <form onSubmit={onSubmit} className="grid gap-4">
+              {/* الاسم */}
               <label className="grid gap-1">
                 <span className="text-sm text-neutral-700 dark:text-neutral-300">
                   {t("fields.name", "Full name")} *
@@ -137,6 +154,7 @@ export default function BookingSection({
                 />
               </label>
 
+              {/* الهاتف */}
               <label className="grid gap-1">
                 <span className="text-sm text-neutral-700 dark:text-neutral-300">
                   {t("fields.phone", "Phone")} *
@@ -150,6 +168,7 @@ export default function BookingSection({
                 />
               </label>
 
+              {/* القسم */}
               <label className="grid gap-1">
                 <span className="text-sm text-neutral-700 dark:text-neutral-300">
                   {t("fields.dept", "Department")} *
@@ -171,6 +190,7 @@ export default function BookingSection({
                 </select>
               </label>
 
+              {/* الطبيب */}
               <label className="grid gap-1">
                 <span className="text-sm text-neutral-700 dark:text-neutral-300">
                   {t("fields.doctor", "Doctor")}
@@ -192,6 +212,7 @@ export default function BookingSection({
                 </select>
               </label>
 
+              {/* رسائل الحالة */}
               {error && (
                 <div className="text-sm text-red-600 dark:text-red-400">{error}</div>
               )}
@@ -199,11 +220,12 @@ export default function BookingSection({
                 <div className="text-sm text-emerald-600 dark:text-emerald-400">
                   {t(
                     "sent",
-                    "Opened WhatsApp & Email composer with your booking details."
+                    "تم فتح واتساب والبريد الإلكتروني مع تفاصيل الحجز الخاصة بك."
                   )}
                 </div>
               )}
 
+              {/* زر الإرسال */}
               <div className={isAr ? "text-right" : "text-left"}>
                 <button
                   type="submit"

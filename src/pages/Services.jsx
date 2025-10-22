@@ -102,7 +102,7 @@ export default function Services() {
 
               <div className="h-48 w-full overflow-hidden">
                 <img
-                  src={d.banner || "/assets/clinic-placeholder.jpg"}
+                  src={d.cover || "/assets/clinic-placeholder.jpg"}
                   alt={label(d.nameAr, d.nameEn)}
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                   loading="lazy"
